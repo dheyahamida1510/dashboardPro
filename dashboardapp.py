@@ -19,7 +19,7 @@ content = html.Div(
     [
         dbc.Row(
             [
-                dbc.Col(html.Div([wordcloud, html.H4("", id="report")])),
+                dbc.Col(html.Div([wordcloud])),
                 dbc.Col(html.Div([dbc.Card(id="list-card")]))
             ]
         )
@@ -51,16 +51,8 @@ def show_navbar(n, is_open):
     if n:
         return not is_open
     return is_open
-"""
-# word cloud
-@app.callback(
-    Output("report", "children"),
-    Input("cloud", "click")
-)
-def update_output_div(item):
-    if item != None:
-        return "People: {}".format(item)
-"""
+
+
 # view list people
 @app.callback(
     Output("list-card", "children"),
@@ -114,136 +106,8 @@ def modal_toggle(n_list, n_close, content, is_open, idx_stored):
             body = profile_details(title)
             n_list = [0]*len(n_list)
             return not is_open, title, body, i, n_list
-            
+
     return is_open, "", "", idx_stored, n_list
-
-
-"""
-@app.callback(
-    Output("list-prop", "children"),
-    [Input({"type": "list", "index": ALL}, "n_clicks")],
-    [State({"type": "list", "index": ALL}, "children")]
-)
-def display_list_properties(n_list, children_list):
-    trigger = dash.callback_context.triggered_id
-    if trigger is not None:
-        index = trigger["index"]
-        n = n_list[index]
-        children = children_list[index][0]["props"]["children"][0]["props"]["children"]
-
-        if n:
-            modal = create_second_modal(children)
-            return modal
-    return None
-
-@app.callback(
-    Output("modal-2", "is_open"),
-    [Input("modal-close-2", "n_clicks")],
-    [State("modal-2", "is_open")]
-)
-
-def modal_toggle(n, is_open):
-    if n:
-        return not is_open
-    return is_open
-"""
-
-"""
-@app.callback(
-    Output("list-prop", "children"),
-    [Input({"type" : "list", "index" : ALL}, "n_clicks_timestamp")],
-    [State({"type" : "list", "index" : ALL}, "children")]
-)
-
-def show_modal(n_timestamp, content):
-    if not n_timestamp and max(content) == 0:
-        return None
-    else:
-        c_index = n_timestamp.index(max(n_timestamp))
-        title = content[c_index][0]["props"]["children"]
-        body = content[c_index][1]["props"]["children"]
-
-        p_modal = dbc.Modal(
-            [
-                dbc.ModalHeader(dbc.ModalTitle(title)),
-                dbc.ModalBody(body),
-                dbc.ModalFooter(
-                    dbc.Button(
-                        "Close",
-                        id={
-                            "type":"close",
-                            "index":c_index
-                        },
-                        className="ms-auto"
-                    )
-                )
-            ],
-            id={
-                "type":"modal",
-                "index":c_index
-            },
-            is_open=True
-        )
-        return p_modal
-
-@app.callback(
-    Output({"type" : "modal", "index" : MATCH}, "is_open"),
-    [Input({"type" : "close", "index" : MATCH}, "n_clicks")],
-    [State({"type" : "modal", "index" : MATCH}, "is_open")]
-)
-
-def modal_toggle(n, is_open):
-    if n:
-        return not is_open
-    return is_open
-"""
-
-"""
-@app.callback(
-    Output("list-prop", "children"),
-    [Input({"type":"list", "index":ALL}, "n_clicks")],
-    [State("list-prop", "children")]
-)
-
-def prof_modals(n_list, children):
-    children = []
-    for i, n in enumerate(n_list):
-        if n:
-            p_modal = dbc.Modal(
-                [
-                    dbc.ModalHeader(dbc.ModalTitle("Head {}".format(i+1))),
-                    dbc.ModalBody("Body {}".format(i+1)),
-                    dbc.ModalFooter(
-                        dbc.Button(
-                            "Close",
-                            id={
-                                "type" : "close",
-                                "index" : i+1
-                            },
-                            className="ms-auto"
-                        )
-                    )
-                ],
-                id={
-                    "type" : "modal",
-                    "index" : i+1
-                    },
-                    is_open=True
-            )
-            children.append(p_modal)
-    return children
-
-@app.callback(
-    Output({"type" : "modal", "index" : MATCH}, "is_open"),
-    [Input({"type" : "close", "index" : MATCH}, "n_clicks")],
-    [State({"type" : "modal", "index" : MATCH}, "is_open")]
-)
-
-def open_modal(n, is_open):
-    if n:
-        return not is_open
-    return is_open
-"""
 
 # modal
 """
