@@ -20,7 +20,7 @@ content = html.Div(
         dbc.Row(
             [
                 dbc.Col(html.Div([wordcloud])),
-                dbc.Col(html.Div([dbc.Card(id="list-card")]))
+                dbc.Col(html.Div([dbc.Card(id="list-card", className="w-75 mb-3", style={"height":"400px", "overflowY":"scroll"})]))
             ]
         )
     ]
