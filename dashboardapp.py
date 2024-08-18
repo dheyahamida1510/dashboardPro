@@ -20,7 +20,20 @@ content = html.Div(
         dbc.Row(
             [
                 dbc.Col(html.Div([wordcloud])),
-                dbc.Col(html.Div([dbc.Card(id="list-card", className="w-75 mb-3", style={"height":"400px", "overflowY":"scroll"})]))
+                dbc.Col(
+                    html.Div(
+                        [
+                            dbc.Card(
+                                [
+                                    dbc.CardHeader(id="card-header"),
+                                    dbc.CardBody(id="list-card", style={"overflowY":"scroll"})
+                                ], 
+                                className="w-75 mb-3",
+                                style={"height":"400px"} 
+                            )
+                        ]
+                    )
+                )
             ]
         )
     ]
@@ -55,8 +68,11 @@ def show_navbar(n, is_open):
 
 # view list people
 @app.callback(
-    Output("list-card", "children"),
-    Input("cloud", "click")
+    [
+        Output("list-card", "children"),
+        Output("card-header", "children")
+    ],
+    [Input("cloud", "click")]
 )
 def show_list(item):
     if item:
@@ -68,15 +84,8 @@ def show_list(item):
             id="list-group",
             flush=True,
         )
-        list_card = [
-            dbc.CardHeader(item[0]),
-            dbc.CardBody(
-                [
-                    list_group
-                ]
-            )
-        ]
-        return list_card
+        return list_group, item[0]
+    return "The list of people will appear here", "Select a word cloud"
 
 # modal untuk view profile
 @app.callback(
