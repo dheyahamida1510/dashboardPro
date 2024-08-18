@@ -114,6 +114,7 @@ def modal_toggle(n_list, n_close, content, is_open, idx_stored):
             body = profile_details(title)
             n_list = [0]*len(n_list)
             return not is_open, title, body, i, n_list
+            
     return is_open, "", "", idx_stored, n_list
 
 
