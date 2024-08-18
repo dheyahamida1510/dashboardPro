@@ -3,10 +3,13 @@ from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 import dashboard, profiles
 
+from navbar import create_navbar
+
 app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 il = html.Div(
     [
+        
         dcc.Location(id="url", pathname="/dashboard", refresh=False),
         html.Div(id="content")
     ]
@@ -59,7 +62,7 @@ def page_navigation(n1, n2):
     ctx = dash.callback_context
     if ctx.triggered:
         menu_id = ctx.triggered[0]["prop_id"].split(".")[0]
-        if menu_id == "navbar-header":
+        if menu_id == "dasboard-menu":
             return "/dashboard"
         elif menu_id == "profile-menu":
             return "/profiles"
