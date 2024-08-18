@@ -68,7 +68,15 @@ def show_list(item):
             id="list-group",
             flush=True,
         )
-        return list_group
+        list_card = [
+            dbc.CardHeader(item[0]),
+            dbc.CardBody(
+                [
+                    list_group
+                ]
+            )
+        ]
+        return list_card
 
 # modal untuk view profile
 @app.callback(
