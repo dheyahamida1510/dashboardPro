@@ -14,6 +14,8 @@ navbar = create_navbar()
 with open("D:\\Dokumen\\example.json") as pd:
     data = json.load(pd)
 
+data.sort(key= lambda x:x["name"])
+
 data_list = []
 
 for index, i in enumerate(data):
