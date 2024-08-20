@@ -1,6 +1,6 @@
 import dash
 import dash_bootstrap_components as dbc
-from dash import Input, Output, State, html, dcc, MATCH, ALL
+from dash import Input, Output, State, html, dcc, ALL
 from dash_bootstrap_components._components.Container import Container
 
 from navbar import create_navbar
