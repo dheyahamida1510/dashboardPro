@@ -19,7 +19,7 @@ content = html.Div(
     [
         dbc.Row(
             [
-                dbc.Col(html.Div([wordcloud])),
+                dbc.Col(html.Div([wordcloud], style={"margin":"10px"})),
                 dbc.Col(
                     html.Div(
                         [
@@ -29,7 +29,7 @@ content = html.Div(
                                     dbc.CardBody(id="list-card", style={"overflowY":"scroll"})
                                 ], 
                                 className="w-75 mb-3",
-                                style={"height":"400px"} 
+                                style={"height":"400px", "margin":"10px"}
                             )
                         ]
                     )
@@ -49,7 +49,8 @@ app.layout = html.Div(
     [navbar, content, store, show_prof, modal],
     style={
         "background": "linear-gradient(to right, #bb88ed, #ffbb00)",
-        "height": "100vh"
+        "height": "100vh",
+        "width": "100vw",
     }
 )
 

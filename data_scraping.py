@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
-import time
+from time import sleep
 import json
 from random import randint
 
@@ -23,7 +23,7 @@ driver = webdriver.Chrome(executable_path="D:\\chromedriver-win64\\chromedriver-
 driver.get("https://linkedin.com/uas/login")
  
 # tunggu loading halaman
-time.sleep(randint(5, 7))
+sleep(randint(5, 7))
 
 # Mengisi username/alamat email
 # cari field untuk mengisi username (email)
@@ -38,7 +38,7 @@ password.send_keys(acc)
 # Format XPATH ---> //tagname[@attribute='value']
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
 # tunggu loading halaman
-time.sleep(randint(5, 6))
+sleep(randint(5, 6))
 
 # check code
 #print(driver.page_source)
@@ -54,7 +54,7 @@ link_list = [
     "https://www.linkedin.com/in/kevincendana/",
     "https://www.linkedin.com/in/-nupurgupta/",
     "https://www.linkedin.com/in/shubhada-bagal/",
-    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/"
+    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
 ]
 
 people_data = []
@@ -62,7 +62,7 @@ people_data = []
 for dsnt_link in link_list:
 
     driver.get(dsnt_link)
-    time.sleep(randint(5, 7))
+    sleep(randint(5, 7))
     source = driver.page_source
     soup = BeautifulSoup(source, "html.parser")
 
@@ -88,7 +88,7 @@ for dsnt_link in link_list:
     # Jika ada element "navigation-index-see-all-experiences"
     if(soup.find("a", attrs={"id" : "navigation-index-see-all-experiences"})):
         driver.find_element(By.XPATH, "//*[@id='navigation-index-see-all-experiences']").click()
-        time.sleep(randint(3, 5))
+        sleep(randint(3, 5))
         experien = driver.page_source
         soup = BeautifulSoup(experien, "html.parser")
 
@@ -113,13 +113,6 @@ for dsnt_link in link_list:
                 # check code
                 # print(exp_name + "\nLocation :\n" + exp_loc + "\nTime :\n" + exp_tm + "\n")
                 # print("\n")
-
-        time.sleep(randint(3, 5))
-        driver.find_element(By.XPATH, "//button[@aria-label='Back to the main profile page']").click()
-        time.sleep(randint(2, 4))
-
-        source = driver.page_source
-        soup = BeautifulSoup(source, "html.parser")
                 
     # Jika tidak ada
     else:
@@ -157,11 +150,12 @@ for dsnt_link in link_list:
         "name" : name,
         "work" : work,
         "location" : loc,
+        "link" : dsnt_link,
         "experiences" : experience
     }
 
     people_data.append(profile_dict)
-    time.sleep(randint(3, 6))
+    sleep(randint(3, 6))
 
 json_data = json.dumps(people_data, indent=3)
 with open("people_data.json", "r+") as pd:
