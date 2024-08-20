@@ -3,13 +3,16 @@ from dash_holoniq_wordcloud import DashWordcloud
 import json
 
 def create_wordcloud():
-    with open("D:\\Dokumen\\career_data.json") as cd:
+    with open("D:\\Dokumen\\career_data_rev.json") as cd:
         data = json.load(cd)
 
     data_list = []
 
     for c in data:
-        worddata = [c["name"], c["count"], c["name"]+" ("+str(c["count"])+")", c["people"]]
+        people = []
+        for p in c["people"]:
+            people.append(p["name"])
+        worddata = [c["name"], c["count"], c["name"]+" ("+str(c["count"])+")", people]
         data_list.append(worddata)
 
     # Melakukan perhitungan untuk mengatur ukuran font frasa saaat ditampilkan pada word cloud
