@@ -19,7 +19,14 @@ content = html.Div(
     [
         dbc.Row(
             [
-                dbc.Col(html.Div([wordcloud], style={"margin":"10px"})),
+                dbc.Col(
+                    html.Div(
+                        [
+                            wordcloud
+                        ],
+                        style={"margin":"10px"}
+                    )
+                ),
                 dbc.Col(
                     html.Div(
                         [
@@ -35,6 +42,47 @@ content = html.Div(
                     )
                 )
             ]
+        ),
+        dbc.Row(
+            [
+                dbc.Col(
+                    html.Div(
+                        [
+                            dbc.Button("Update Data", id="update-data", className="ms-auto", n_clicks=0),
+                            dbc.Modal(
+                                [
+                                    dbc.ModalBody("Are you sure want to update data?"),
+                                    dbc.ModalFooter(
+                                        [
+                                            dbc.Button(
+                                                "No",
+                                                id="no-update",
+                                                className="ms-auto",
+                                                n_clicks=0,
+                                                color="dark",
+                                                outline=True
+                                            ),
+                                            dbc.Button(
+                                                "Yes",
+                                                id="yes-update",
+                                                className="ms-auto",
+                                                n_clicks=0,
+                                                color="primary"
+                                            )
+                                        ]
+                                    )
+                                ],
+                                id="confirmation-panel",
+                                centered=True,
+                                is_open=False
+                            )
+                        ],
+                        style={
+                            "margin":"10px"
+                        }
+                    )
+                )
+            ]
         )
     ]
 )
@@ -44,9 +92,11 @@ modal = create_modal()
 #list_prop = html.Div(id="list-prop")
 show_prof = html.Div(id="show-profile")
 store = dcc.Store(id="item-store", data=None)
+conf_click = dcc.Store(id="store-conf-clicks", data=0)
+confirmation_test = html.Div(id="check-confirmation")
 
 app.layout = html.Div(
-    [navbar, content, store, show_prof, modal],
+    [navbar, content, store, show_prof, modal, conf_click, confirmation_test],
     style={
         "background": "linear-gradient(to right, #bb88ed, #ffbb00)",
         "height": "100vh",
@@ -66,6 +116,51 @@ def show_navbar(n, is_open):
         return not is_open
     return is_open
 
+# update confirmation panel
+@app.callback(
+    [
+        Output("confirmation-panel", "is_open"),
+        Output("store-conf-clicks", "data")
+    ],
+    [
+        Input("update-data", "n_clicks"),
+        Input("yes-update", "n_clicks"),
+        Input("no-update", "n_clicks")
+    ],
+    [
+        State("confirmation-panel", "is_open"),
+        State("store-conf-clicks", "data")
+    ]
+)
+def confirmation_panel(n_open, n_yes, n_no, is_open, clicks_stored):
+
+    ctx = dash.callback_context
+
+    if not ctx.triggered:
+        return is_open, clicks_stored
+
+    trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
+
+    if trigger_id == "update-data" and n_open > clicks_stored:
+        clicks_stored = n_open
+        return True, clicks_stored
+    elif trigger_id in ["yes-update", "no-update"]:
+        return False, 0  
+
+    return is_open, clicks_stored
+
+@app.callback(
+    Output("check-confirmation", "children"),
+    [Input("yes-update", "n_clicks")]
+)
+def update_confirmation(n):
+    if n > 0:
+        with open("D:\\Dokumen\\dashboardPro\\test_script.py") as scp:
+            exec(scp.read())
+        with open("D:\\Dokumen\\dashboardPro\\test_script_0.py") as scp:
+            exec(scp.read())
+        return "Action!"
+    return ""
 
 # view list people
 @app.callback(
