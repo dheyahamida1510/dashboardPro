@@ -47,14 +47,14 @@ sleep(randint(5, 6))
 link_list = [
     "https://www.linkedin.com/in/saiku1/",
     "https://www.linkedin.com/in/tarandeep-singh-947135104/",
-    "https://www.linkedin.com/in/sylvester-kwame-inkoom-phd-6357b560/",
-    "https://www.linkedin.com/in/mdcochran/",
-    "https://www.linkedin.com/in/ameya-kabre/",
-    "https://www.linkedin.com/in/maddyrandle/",
-    "https://www.linkedin.com/in/kevincendana/",
-    "https://www.linkedin.com/in/-nupurgupta/",
-    "https://www.linkedin.com/in/shubhada-bagal/",
-    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
+#    "https://www.linkedin.com/in/sylvester-kwame-inkoom-phd-6357b560/",
+#    "https://www.linkedin.com/in/mdcochran/",
+#    "https://www.linkedin.com/in/ameya-kabre/",
+#    "https://www.linkedin.com/in/maddyrandle/",
+#    "https://www.linkedin.com/in/kevincendana/",
+#    "https://www.linkedin.com/in/-nupurgupta/",
+#    "https://www.linkedin.com/in/shubhada-bagal/",
+#    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
 ]
 
 people_data = []
@@ -158,7 +158,7 @@ for dsnt_link in link_list:
     sleep(randint(3, 6))
 
 json_data = json.dumps(people_data, indent=3)
-with open("people_data.json", "r+") as pd:
+with open("D:\\Dokumen\\dashboardPro\\people_data.json", "r+") as pd:
     people_data = json.load(pd)
     pd.seek(0)
     pd.write(json_data)

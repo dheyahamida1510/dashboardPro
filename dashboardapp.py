@@ -2,6 +2,8 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, html, dcc, ALL
 from dash_bootstrap_components._components.Container import Container
+import nbformat
+from nbconvert.preprocessors import ExecutePreprocessor
 
 from navbar import create_navbar
 from interactive_wordcloud import create_wordcloud
@@ -155,10 +157,10 @@ def confirmation_panel(n_open, n_yes, n_no, is_open, clicks_stored):
 )
 def update_confirmation(n):
     if n > 0:
-        with open("D:\\Dokumen\\dashboardPro\\test_script.py") as scp:
-            exec(scp.read())
-        with open("D:\\Dokumen\\dashboardPro\\test_script_0.py") as scp:
-            exec(scp.read())
+        with open("D:\\Dokumen\\dashboardPro\\try_jn.ipynb") as scp:
+            notebook = nbformat.read(scp, nbformat.NO_CONVERT)
+        ep = ExecutePreprocessor(timeout=600, kernel_name="python3")
+        ep.preprocess(notebook)
         return "Action!"
     return ""
 

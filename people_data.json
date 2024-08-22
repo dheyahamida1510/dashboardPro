@@ -1,1 +1,98 @@
-[]
+[
+   {
+      "name": "Sai Kumar Popuri",
+      "work": "Data Science & AI leader | Driving Margin and CX with AI | PhD in AI. Work visa: Green Card EAD",
+      "location": "Des Moines, Iowa, United States",
+      "link": "https://www.linkedin.com/in/saiku1/",
+      "experiences": [
+         {
+            "name": "Head of Data Science, Director",
+            "location": "Casey's \u00b7 Full-time",
+            "time": "Jun 2023 - Jun 2024 \u00b7 1 yr 1 mo"
+         },
+         {
+            "name": "Director, Data Science - Strategy & Transformation",
+            "location": "Bed Bath & Beyond \u00b7 Full-time",
+            "time": "Mar 2022 - Apr 2023 \u00b7 1 yr 2 mos"
+         },
+         {
+            "name": "Principal Data Science Lead - Inventory & Replenishment",
+            "location": "Petco \u00b7 Full-time",
+            "time": "Apr 2020 - Mar 2022 \u00b7 2 yrs"
+         },
+         {
+            "name": "Data Science",
+            "location": "Walmart \u00b7 Full-time",
+            "time": "Jan 2018 - Apr 2021 \u00b7 3 yrs 4 mos"
+         },
+         {
+            "name": "Resesech Data Scientist",
+            "location": "Center for Research on the Changing Earth System",
+            "time": "Dec 2011 - Dec 2017 \u00b7 6 yrs 1 mo"
+         },
+         {
+            "name": "Senior Manager / VP - Energy Trading Analytics",
+            "location": "Macquarie Group \u00b7 Full-time",
+            "time": "2009 - 2011 \u00b7 2 yrs"
+         },
+         {
+            "name": "Data Scientist - Risk Management & Energy Trading",
+            "location": "UBS \u00b7 Full-time",
+            "time": "2006 - 2009 \u00b7 3 yrs"
+         },
+         {
+            "name": "Sr. Member - Technical Staff  / Sr. Software Engineer",
+            "location": "The D. E. Shaw Group \u00b7 Full-time",
+            "time": "Jul 2001 - Jul 2004 \u00b7 3 yrs 1 mo"
+         }
+      ]
+   },
+   {
+      "name": "Tarandeep Singh",
+      "work": "Data Scientist | Prev @ Apple, Amazon | MS in Data Science | Gen AI",
+      "location": "Boston, Massachusetts, United States",
+      "link": "https://www.linkedin.com/in/tarandeep-singh-947135104/",
+      "experiences": [
+         {
+            "name": "Machine Learning Engineer",
+            "location": "Canaria \u00b7 Full-time",
+            "time": "Jul 2024 - Present \u00b7 2 mos"
+         },
+         {
+            "name": "Data Validation Assistant",
+            "location": "Northeastern University \u00b7 Part-time",
+            "time": "Feb 2022 - Present \u00b7 2 yrs 7 mos"
+         },
+         {
+            "name": "Data Scientist",
+            "location": "Apple \u00b7 Internship",
+            "time": "Jun 2023 - Sep 2023 \u00b7 4 mos"
+         },
+         {
+            "name": "Data Scientist",
+            "location": "Amazon Global Robotics \u00b7 Internship",
+            "time": "Jan 2023 - Jun 2023 \u00b7 6 mos"
+         },
+         {
+            "name": "Product Analyst",
+            "location": "Sprinklr \u00b7 Full-time",
+            "time": "Nov 2020 - Jan 2022 \u00b7 1 yr 3 mos"
+         },
+         {
+            "name": "Data Science and Analytics Associate",
+            "location": "KPMG India \u00b7 Full-time",
+            "time": "Jun 2017 - Nov 2020 \u00b7 3 yrs 6 mos"
+         },
+         {
+            "name": "Research Intern, Machine Learning & Natural Language Processing",
+            "location": "Defence Research and Development Organisation (DRDO) \u00b7 Internship",
+            "time": "Dec 2015 - Jun 2017 \u00b7 1 yr 7 mos"
+         },
+         {
+            "name": "Summer Research Intern, Information Retrieval",
+            "location": "Indian Navy  \u00b7 Internship",
+            "time": "Jun 2015 - Jul 2015 \u00b7 2 mos"
+         }
+      ]
+   }
+]
