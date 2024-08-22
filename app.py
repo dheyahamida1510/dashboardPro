@@ -5,68 +5,43 @@ import dashboard, profiles
 
 from navbar import create_navbar
 
-app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 
-il = html.Div(
+navbar = dbc.NavbarSimple(
     [
-        
-        dcc.Location(id="url", pathname="/dashboard", refresh=False),
-        html.Div(id="content")
-    ]
+        dbc.NavItem(dcc.Link("Dashboard", href="/", className="nav-link")),
+        dbc.NavItem(dcc.Link("Alumni Profiles", href="/profiles", className="nav-link"))
+    ],
+    brand="CS UPI Alumni Dashboard",
+    color="dark",
+    dark=True
 )
 
-app.validation_layout = html.Div(
+app.layout = html.Div(
     [
-        il,
-        dashboard.layout,
-        profiles.layout,
-    ]
+        dcc.Location(id="url", refresh=False),
+        navbar,
+        html.Div(id="page-content"),
+    ],
+    style={
+        "background": "linear-gradient(to right, #bb88ed, #ffbb00)",
+        "height": "100vh",
+        "width": "100vw",
+    }
 )
-
-app.layout = il
 
 @app.callback(
-    Output("content", "children"),
-    Input("url", "pathname")
+    Output("page-content", "children"),
+    [Input("url", "pathname")]
 )
 
 def show_page(pathname):
-    if pathname == "/dashboard":
+    if pathname == "/":
         return dashboard.layout
     elif pathname == "/profiles":
         return profiles.layout
     else:
-        return dashboard.layout
-
-# navigation bar
-@app.callback(
-    Output("navbar-collapse", "is_open"),
-    [Input("navbar-toggler", "n_clicks")],
-    [State("navbar-collapse", "is_open")]
-)
-
-def show_navbar(n, is_open):
-    if n:
-        return not is_open
-    return is_open
-
-@app.callback(
-    Output("url", "pathname"),
-    [
-        Input("navbar-header", "n_clicks"),
-        Input("profile-menu", "n_clicks")
-    ]
-)
-
-def page_navigation(n1, n2):
-    ctx = dash.callback_context
-    if ctx.triggered:
-        menu_id = ctx.triggered[0]["prop_id"].split(".")[0]
-        if menu_id == "dasboard-menu":
-            return "/dashboard"
-        elif menu_id == "profile-menu":
-            return "/profiles"
-    return dash.no_update
+        return "Page not found"
 
 if __name__ == "__main__":
     app.run_server(debug=True)

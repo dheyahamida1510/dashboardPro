@@ -6,10 +6,8 @@ from dash_bootstrap_components._components.Container import Container
 import json
 
 from navbar import create_navbar
+import app
 
-app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-navbar = create_navbar()
 
 with open("D:\\Dokumen\\example.json") as pd:
     data = json.load(pd)
@@ -46,13 +44,14 @@ list_group = dbc.ListGroup(
     ]
 )
 
-app.layout = html.Div(
-    [navbar, list_group],
-    style={
-        "background": "linear-gradient(to right, #bb88ed, #ffbb00)",
-        "height": "100vh"
-    }
+layout = html.Div(
+    [
+        dbc.Card(
+            [
+                list_group
+            ],
+            className="w-50 mb-3",
+            style={"height":"400px", "margin":"10px"}
+        )
+    ]
 )
-
-if __name__ == "__main__":
-    app.run_server(debug=True)
