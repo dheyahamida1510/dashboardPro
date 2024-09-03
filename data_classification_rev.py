@@ -36,7 +36,7 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
 
                                 # mencari lama waktu bulan
                                 mos = 0
-                                m = re.search(r"\b(\d+)\s+mos\b", e["time"])
+                                m = re.search(r"\b(\d+)\s+(mo|mos?)\b", e["time"])
                                 if m:
                                     mos = int(m.group(1))
 
