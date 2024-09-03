@@ -159,7 +159,7 @@ def update_confirmation(n):
     if n > 0:
         with open("D:\\Dokumen\\dashboardPro\\try_jn.ipynb") as scp:
             notebook = nbformat.read(scp, nbformat.NO_CONVERT)
-        ep = ExecutePreprocessor(timeout=600, kernel_name="python3")
+        ep = ExecutePreprocessor(timeout=None, kernel_name="python3")
         ep.preprocess(notebook)
         return "Action!"
     return ""

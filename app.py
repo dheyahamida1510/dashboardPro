@@ -3,8 +3,6 @@ from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 import dashboard, profiles
 
-from navbar import create_navbar
-
 app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 
 navbar = dbc.NavbarSimple(
@@ -45,4 +43,4 @@ def show_page(pathname):
         return "Page not found"
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=False)
