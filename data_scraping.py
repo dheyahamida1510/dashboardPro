@@ -56,7 +56,7 @@ link_list = [
 #    "https://www.linkedin.com/in/tarandeep-singh-947135104/",
 #    "https://www.linkedin.com/in/sylvester-kwame-inkoom-phd-6357b560/",
     "https://www.linkedin.com/in/mdcochran/",
-    "https://www.linkedin.com/in/ameya-kabre/",
+#    "https://www.linkedin.com/in/ameya-kabre/",
 #    "https://www.linkedin.com/in/maddyrandle/",
 #    "https://www.linkedin.com/in/kevincendana/",
 #    "https://www.linkedin.com/in/-nupurgupta/",

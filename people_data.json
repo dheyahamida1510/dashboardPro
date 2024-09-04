@@ -134,13 +134,6 @@
       ]
    },
    {
-      "name": "Michael Cochran",
-      "work": "Senior Software Engineer | Python and Java | LION",
-      "location": "Barnegat, New Jersey, United States",
-      "link": "https://www.linkedin.com/in/mdcochran/",
-      "experiences": []
-   },
-   {
       "name": "Ameya Kabre",
       "work": "Software Engineer @ Citadel | Amazon | VMware | Arista | NVIDIA | M.S. in Computer Science @ UCLA",
       "location": "Chicago, Illinois, United States",
@@ -175,6 +168,44 @@
             "name": "Intern",
             "location": "NVIDIA",
             "time": "Jul 2013 - Apr 2014 \u00b7 10 mos"
+         }
+      ]
+   },
+   {
+      "name": "Michael Cochran",
+      "work": "Senior Software Engineer | Python and Java | LION",
+      "location": "Barnegat, New Jersey, United States",
+      "link": "https://www.linkedin.com/in/mdcochran/",
+      "experiences": [
+         {
+            "name": "Senior Software Engineer",
+            "location": "OpenText",
+            "time": "2013 - 2018 \u00b7 5 yrs"
+         },
+         {
+            "name": "Developer",
+            "location": "AT&T",
+            "time": "2013 - 2013 \u00b7 Less than a year"
+         },
+         {
+            "name": "Software Engineer",
+            "location": "Ribbon Communications",
+            "time": "2010 - 2012 \u00b7 2 yrs"
+         },
+         {
+            "name": "Software Support Engineer",
+            "location": "BlackStratus, Inc.",
+            "time": "2009 - 2010 \u00b7 1 yr"
+         },
+         {
+            "name": "Software Engineer",
+            "location": "RIVA Networks",
+            "time": "2007 - 2008 \u00b7 1 yr"
+         },
+         {
+            "name": "Associate",
+            "location": "Princeton Consultants",
+            "time": "2006 - 2007 \u00b7 1 yr"
          }
       ]
    }
