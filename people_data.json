@@ -132,5 +132,50 @@
             "time": "Jun 2009 - Jul 2009 \u00b7 2 mos"
          }
       ]
+   },
+   {
+      "name": "Michael Cochran",
+      "work": "Senior Software Engineer | Python and Java | LION",
+      "location": "Barnegat, New Jersey, United States",
+      "link": "https://www.linkedin.com/in/mdcochran/",
+      "experiences": []
+   },
+   {
+      "name": "Ameya Kabre",
+      "work": "Software Engineer @ Citadel | Amazon | VMware | Arista | NVIDIA | M.S. in Computer Science @ UCLA",
+      "location": "Chicago, Illinois, United States",
+      "link": "https://www.linkedin.com/in/ameya-kabre/",
+      "experiences": [
+         {
+            "name": "Software Engineer",
+            "location": "Citadel \u00b7 Full-time",
+            "time": "Jan 2020 - Present \u00b7 4 yrs 9 mos"
+         },
+         {
+            "name": "Software Development Engineer 2",
+            "location": "Amazon \u00b7 Full-time",
+            "time": "Feb 2018 - Jan 2020 \u00b7 2 yrs"
+         },
+         {
+            "name": "Intern, Member of Technical Staff vAPI",
+            "location": "VMware",
+            "time": "Jun 2017 - Sep 2017 \u00b7 4 mos"
+         },
+         {
+            "name": "Graduate Teaching Assistant",
+            "location": "University of California, Los Angeles",
+            "time": "Jan 2017 - Jun 2017 \u00b7 6 mos"
+         },
+         {
+            "name": "Senior Member of Technical Staff",
+            "location": "Mojo Networks, Inc.",
+            "time": "Jun 2014 - Jun 2016 \u00b7 2 yrs 1 mo"
+         },
+         {
+            "name": "Intern",
+            "location": "NVIDIA",
+            "time": "Jul 2013 - Apr 2014 \u00b7 10 mos"
+         }
+      ]
    }
 ]
