@@ -66,7 +66,7 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
     json_data = json.dumps(career_data, indent=3)
 
     # membuka dan menulis isi database career
-    with open("D:\\Dokumen\\career_data_rev.json", "r+") as cd:
+    with open("D:\\Dokumen\\dashboardPro\\career_data.json", "r+") as cd:
         career_data = json.load(cd)
         cd.seek(0)
         cd.write(json_data)

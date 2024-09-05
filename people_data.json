@@ -208,5 +208,56 @@
             "time": "2006 - 2007 \u00b7 1 yr"
          }
       ]
+   },
+   {
+      "name": "Maddy Randle",
+      "work": "Front End Web Developer",
+      "location": "Dallas-Fort Worth Metroplex",
+      "link": "https://www.linkedin.com/in/maddyrandle/",
+      "experiences": [
+         {
+            "name": "Software Developer",
+            "location": "Caffeinated Beauty Bar \u00b7 Contract",
+            "time": "May 2021 - Jul 2021 \u00b7 3 mos"
+         },
+         {
+            "name": "Front-End Engineer",
+            "location": "Via TRM \u00b7 Full-time",
+            "time": "Nov 2020 - Feb 2021 \u00b7 4 mos"
+         },
+         {
+            "name": "Front-End Engineer",
+            "location": "Turing School of Software & Design \u00b7 Full-time",
+            "time": "Sep 2019 - Aug 2020 \u00b7 1 yr"
+         },
+         {
+            "name": "Customer Loyalty Specialist",
+            "location": "American Airlines \u00b7 Full-time",
+            "time": "Aug 2015 - Aug 2019 \u00b7 4 yrs 1 mo"
+         },
+         {
+            "name": "Patient Service Representative",
+            "location": "Southwest Ear Nose & Throat \u00b7 Part-time",
+            "time": "Aug 2010 - Aug 2012 \u00b7 2 yrs 1 mo"
+         }
+      ]
+   },
+   {
+      "name": "Kevin Cendana",
+      "work": "Frontend Developer",
+      "location": "Sacramento, California, United States",
+      "link": "https://www.linkedin.com/in/kevincendana/",
+      "experiences": [
+         {
+            "name": "Frontend Web Developer",
+            "location": "Dream Arcades \u00b7 Part-time",
+            "time": "Mar 2024 - Present \u00b7 7 mos"
+         },
+         {
+            "name": "Team Member",
+            "location": "Edible Arrangements \u00b7 Part-time",
+            "time": "Jan 2020 - Aug 2021 \u00b7 1 yr 8 mos"
+         }
+      ]
    }
 ]

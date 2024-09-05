@@ -157,10 +157,10 @@ def confirmation_panel(n_open, n_yes, n_no, is_open, clicks_stored):
 )
 def update_confirmation(n):
     if n > 0:
-        with open("D:\\Dokumen\\dashboardPro\\try_jn.ipynb") as scp:
-            notebook = nbformat.read(scp, nbformat.NO_CONVERT)
-        ep = ExecutePreprocessor(timeout=None, kernel_name="python3")
-        ep.preprocess(notebook)
+        with open("D:\\Dokumen\\dashboardPro\\data_scraping.py") as scp:
+            exec(scp.read())
+        with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py") as scp:
+            exec(scp.read())
         return "Action!"
     return ""
 
