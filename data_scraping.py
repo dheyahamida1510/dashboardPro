@@ -24,8 +24,6 @@ service = Service("D:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"
 
 driver = webdriver.Chrome(service=service, options=options)
 
-#driver = webdriver.Chrome(executable_path="D:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe", options=options)
-
 # membuka halaman login LinkedIn
 driver.get("https://linkedin.com/uas/login")
  
