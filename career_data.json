@@ -21,16 +21,16 @@
       ],
       "people": [
          {
+            "name": "Sai Kumar Popuri",
+            "weight": 127
+         },
+         {
             "name": "Tarandeep Singh",
-            "weight": 16
+            "weight": 52
          },
          {
             "name": "Sylvester Kwame Inkoom, PhD",
-            "weight": 14
-         },
-         {
-            "name": "Sai Kumar Popuri",
-            "weight": 7
+            "weight": 26
          }
       ],
       "count": 3
@@ -112,15 +112,23 @@
       ],
       "people": [
          {
-            "name": "Ameya Kabre",
-            "weight": 9
+            "name": "Michael Cochran",
+            "weight": 96
          },
          {
-            "name": "Michael Cochran",
-            "weight": 0
+            "name": "Ameya Kabre",
+            "weight": 81
+         },
+         {
+            "name": "Sai Kumar Popuri",
+            "weight": 37
+         },
+         {
+            "name": "Maddy Randle",
+            "weight": 3
          }
       ],
-      "count": 2
+      "count": 4
    },
    {
       "name": "Web Developer",
@@ -193,7 +201,7 @@
       "people": [
          {
             "name": "Sai Kumar Popuri",
-            "weight": 3
+            "weight": 75
          },
          {
             "name": "Tarandeep Singh",

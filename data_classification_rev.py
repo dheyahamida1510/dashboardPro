@@ -10,12 +10,15 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
     career_data = json.load(cdf)
 
     # input data nama-nama ke database career
+    # iterasi melalui setiap data user
     for p in people_data:
-        career_count = 0
+        career_count = 0    # untuk menghitung jumlah data career yang masuk
 
+        # iterasi database career
         for c in career_data:
             i = 0
 
+            # iterasi pada list "career" untuk menemukan kecocokan
             while i < len(c["career"]):
 
                 if re.search(c["career"][i], p["work"], re.IGNORECASE):
@@ -51,6 +54,49 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                     c["count"] += 1
                     career_count += 1
                     i = len(c["career"])
+                    
+                else:
+                    exp = 0
+
+                    while exp < len(p["experiences"]):
+
+                        if re.search(c["career"][i], p["experiences"][exp]["name"], re.IGNORECASE):
+                            time_list = []
+                            total_time = 0
+
+                            for e in p["experiences"]:
+                                for cn in c["career"]:
+                                    if re.search(cn, e["name"], re.IGNORECASE):
+                                        
+                                        # mencari lama waktu tahun
+                                        yr = 0
+                                        y = re.search(r"·\s+(\d+)\s+(yr|yrs?)", e["time"])
+                                        if y:
+                                            yr = int(y.group(1))
+                                        # ubah tahun ke bentuk bulan
+                                        yr_to_mos = yr*12
+
+                                        # mencari lama waktu bulan
+                                        mos = 0
+                                        m = re.search(r"\b(\d+)\s+(mo|mos?)\b", e["time"])
+                                        if m:
+                                            mos = int(m.group(1))
+
+                                        # menjumlahkan total waktu
+                                        total = yr_to_mos + mos
+                                        time_list.append(total)
+
+                            for tm in time_list:
+                                total_time = total_time + tm
+
+                            c["people"].append({"name" : p["name"], "weight" : total_time})
+                            c["count"] += 1
+                            career_count += 1
+                            i = len(c["career"])
+                            exp = len(p["experiences"])
+
+                        exp += 1
+                        
                 i += 1
 
         if career_count == 0:
