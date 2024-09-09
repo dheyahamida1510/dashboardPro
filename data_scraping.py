@@ -178,7 +178,6 @@ for dsnt_link in link_list:
 
 json_data = json.dumps(people_data, indent=3)
 with open("D:\\Dokumen\\dashboardPro\\people_data.json", "r+") as pd:
-    people_data = json.load(pd)
     pd.seek(0)
     pd.write(json_data)
 
