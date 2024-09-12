@@ -26,8 +26,11 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                     total_time = 0
 
                     for e in p["experiences"]:
-                        for cn in c["career"]:
-                            if re.search(cn, e["name"], re.IGNORECASE):
+                        cn = 0
+
+                        while cn < len(c["career"]):
+
+                            if re.search(c["career"][cn], e["name"], re.IGNORECASE):
                                 
                                 # mencari lama waktu tahun
                                 yr = 0
@@ -46,6 +49,8 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                                 # menjumlahkan total waktu
                                 total = yr_to_mos + mos
                                 time_list.append(total)
+                                cn = len(c["career"])
+                            cn += 1
 
                     for tm in time_list:
                         total_time = total_time + tm
@@ -65,8 +70,11 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                             total_time = 0
 
                             for e in p["experiences"]:
-                                for cn in c["career"]:
-                                    if re.search(cn, e["name"], re.IGNORECASE):
+                                cn = 0
+
+                                while cn < len(c["career"]):
+                                    
+                                    if re.search(c["career"][cn], e["name"], re.IGNORECASE):
                                         
                                         # mencari lama waktu tahun
                                         yr = 0
@@ -85,6 +93,8 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                                         # menjumlahkan total waktu
                                         total = yr_to_mos + mos
                                         time_list.append(total)
+                                        cn = len(c["career"])
+                                    cn += 1
 
                             for tm in time_list:
                                 total_time = total_time + tm
