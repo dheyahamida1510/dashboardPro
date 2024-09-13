@@ -225,7 +225,16 @@
    {
       "name": "Other",
       "career": [],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Shubhada Bagal",
+            "weight": 0
+         },
+         {
+            "name": "Zaretta Hammond",
+            "weight": 0
+         }
+      ],
+      "count": 2
    }
 ]

@@ -3,7 +3,7 @@ from dash_holoniq_wordcloud import DashWordcloud
 import json
 
 def create_wordcloud():
-    with open("D:\\Dokumen\\career_data_rev.json") as cd:
+    with open("D:\\Dokumen\\dashboardPro\\career_data.json") as cd:
         data = json.load(cd)
 
     data_list = []

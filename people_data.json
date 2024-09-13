@@ -259,5 +259,76 @@
             "time": "Jan 2020 - Aug 2021 \u00b7 1 yr 8 mos"
          }
       ]
+   },
+   {
+      "name": "Shubhada Bagal",
+      "work": "Product Analyst @ UPS",
+      "location": "United States",
+      "link": "https://www.linkedin.com/in/shubhada-bagal/",
+      "experiences": [
+         {
+            "name": "Associate Product Manager",
+            "location": "Aspiring Product Managers Club @ Northeastern University \u00b7 Freelance",
+            "time": "Jul 2022 - Dec 2022 \u00b7 6 mos"
+         },
+         {
+            "name": "Systems Engineer - QA Analyst",
+            "location": "Infosys \u00b7 Full-time",
+            "time": "Feb 2020 - Dec 2021 \u00b7 1 yr 11 mos"
+         }
+      ]
+   },
+   {
+      "name": "Zaretta Hammond",
+      "work": "Teacher Educator | Literacy Advocate | Believer in the Science of Learning",
+      "location": "Little Rock, Arkansas, United States",
+      "link": "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
+      "experiences": [
+         {
+            "name": "Founder and CEO",
+            "location": "Transformative Learning Solutions, LLC",
+            "time": "2007 - Present \u00b7 17 yrs 9 mos"
+         },
+         {
+            "name": "Board Trustee",
+            "location": "Center for the Collaborative Classroom",
+            "time": "Oct 2018 - Present \u00b7 6 yrs"
+         },
+         {
+            "name": "Advisory Committee Member",
+            "location": "Consortium of Reading Excellence (C.O.R.E.)",
+            "time": "Jan 2020 - Present \u00b7 4 yrs 9 mos"
+         },
+         {
+            "name": "Strategic Advisor",
+            "location": "The Aspen Institute Education & Society Program \u00b7 Contract",
+            "time": "Jan 2020 - Dec 2021 \u00b7 2 yrs"
+         },
+         {
+            "name": "Lecturer -- Foundations of Adolescent Literacy | Kalmanovitz School of Education",
+            "location": "Saint Mary's College of California",
+            "time": "Aug 2013 - Nov 2015 \u00b7 2 yrs 4 mos"
+         },
+         {
+            "name": "Curriculum Development Manager",
+            "location": "National Equity Project",
+            "time": "2008 - 2013 \u00b7 5 yrs"
+         },
+         {
+            "name": "Professional Development Specialist",
+            "location": "Bay Area Coalition for Equitable Schools",
+            "time": "2001 - 2005 \u00b7 4 yrs"
+         },
+         {
+            "name": "Evaluation Specialist",
+            "location": "InSites",
+            "time": "1989 - 2002 \u00b7 13 yrs"
+         },
+         {
+            "name": "Program Director, The Equity Initiative",
+            "location": "Bay Area School Reform Collaborative (BASRC)",
+            "time": "1999 - 2001 \u00b7 2 yrs"
+         }
+      ]
    }
 ]

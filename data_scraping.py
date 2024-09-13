@@ -57,9 +57,10 @@ link_list = [
 #    "https://www.linkedin.com/in/ameya-kabre/",
 #    "https://www.linkedin.com/in/maddyrandle/",
 #    "https://www.linkedin.com/in/kevincendana/",
-    "https://www.linkedin.com/in/-nupurgupta/",
-    "https://www.linkedin.com/in/shubhada-bagal/",
-#    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
+#    "https://www.linkedin.com/in/shubhada-bagal/",
+    "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
+    "https://www.linkedin.com/in/ojo-audu-azure-certified/",
+    "https://www.linkedin.com/in/victor-akoko-b85a2221a/",
 ]
 
 with open("D:\\Dokumen\\dashboardPro\\people_data.json", "r+") as pd:

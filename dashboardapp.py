@@ -89,14 +89,13 @@ content = html.Div(
     ]
 )
 
-#modals = data_modals()
-modal = create_modal()
-#list_prop = html.Div(id="list-prop")
+modal = create_modal()  # inisialisasi modal
 show_prof = html.Div(id="show-profile")
 store = dcc.Store(id="item-store", data=None)
 conf_click = dcc.Store(id="store-conf-clicks", data=0)
 confirmation_test = html.Div(id="check-confirmation")
 
+# app layout
 app.layout = html.Div(
     [navbar, content, store, show_prof, modal, conf_click, confirmation_test],
     style={

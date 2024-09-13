@@ -5,7 +5,7 @@ import re
 
 def create_list(item):
 
-    with open("D:\\Dokumen\\example.json") as pd:
+    with open("D:\\Dokumen\\dashboardPro\\people_data.json") as pd:
         data = json.load(pd)
 
     data_list = []
@@ -39,7 +39,7 @@ def create_list(item):
 
 def profile_details(name):
 
-    with open("D:\\Dokumen\\example.json") as pd:
+    with open("D:\\Dokumen\\dashboardPro\\people_data.json") as pd:
         data = json.load(pd)
 
     data_list = []
