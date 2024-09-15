@@ -156,10 +156,13 @@ def confirmation_panel(n_open, n_yes, n_no, is_open, clicks_stored):
 )
 def update_confirmation(n):
     if n > 0:
-        with open("D:\\Dokumen\\dashboardPro\\data_scraping.py") as scp:
-            exec(scp.read())
-        with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py") as scp:
-            exec(scp.read())
+        isolated_variables = {}
+        with open("D:\\Dokumen\\dashboardPro\\data_scraping.py", "r") as scp:
+            code_script = scp.read()
+            exec(code_script, isolated_variables, isolated_variables)
+        with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py", "r") as scp:
+            code_script = scp.read()
+            exec(code_script, isolated_variables, isolated_variables)
         return "Action!"
     return ""
 

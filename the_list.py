@@ -12,7 +12,7 @@ def create_list(item):
 
     for index, i in enumerate(item):
         for p in data:
-            if re.search(i, p["name"]):
+            if i == p["name"]:
                 lst = dbc.ListGroupItem(
                     [
                         html.Div(
@@ -44,7 +44,7 @@ def profile_details(name):
 
     data_list = []
     for p in data:
-        if re.search(name, p["name"]):
+        if name == p["name"]:
             for index, e in enumerate(p["experiences"]):
                 lst = dbc.ListGroupItem(
                     [

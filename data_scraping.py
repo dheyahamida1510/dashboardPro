@@ -73,113 +73,127 @@ for dsnt_link in link_list:
     source = driver.page_source
     soup = BeautifulSoup(source, "html.parser")
 
-    # Mendapatkan bagian introduction dari profil
-    # (name, work, location)
-    intro = soup.find("div", class_= "mt2 relative")
+    if(soup.find("div", class_= "mt2 relative")):
 
-    # check code
-    # print(intro)
+        # Mendapatkan bagian introduction dari profil
+        # (name, work, location)
+        intro = soup.find("div", class_= "mt2 relative")
 
-    name = intro.find("h1", class_="text-heading-xlarge inline t-24 v-align-middle break-words").text.strip()
-    work = intro.find("div", class_="text-body-medium break-words").text.strip()
-    loc = intro.find("span", class_="text-body-small inline t-black--light break-words").text.strip()
+        # check code
+        # print(intro)
 
-    # check code
-    # print("Nama     : " + name + "\nProfesi     : " + work + "\nLokasi    : " + loc)
+        name = intro.find("h1", class_="text-heading-xlarge inline t-24 v-align-middle break-words").text.strip()
+        work = intro.find("div", class_="text-body-medium break-words").text.strip()
+        loc = intro.find("span", class_="text-body-small inline t-black--light break-words").text.strip()
+
+        # check code
+        # print("Nama     : " + name + "\nProfesi     : " + work + "\nLokasi    : " + loc)
 
 
-    # Mengambil data Experience
+        # Mengambil data Experience
 
-    experience = []
+        experience = []
 
-    # Jika ada element "navigation-index-see-all-experiences"
-    if(soup.find("a", attrs={"id" : "navigation-index-see-all-experiences"})):
-        driver.find_element(By.XPATH, "//*[@id='navigation-index-see-all-experiences']").click()
-        sleep(randint(3, 5))
-        experien = driver.page_source
-        soup = BeautifulSoup(experien, "html.parser")
+        # Jika ada element "navigation-index-see-all-experiences"
+        if(soup.find("a", attrs={"id" : "navigation-index-see-all-experiences"})):
+            driver.find_element(By.XPATH, "//*[@id='navigation-index-see-all-experiences']").click()
+            sleep(randint(3, 5))
+            experien = driver.page_source
+            soup = BeautifulSoup(experien, "html.parser")
 
-        exp = soup.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
+            exp = soup.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
 
-        for e in exp:
-            exprn = e.find("div", class_="display-flex flex-row justify-space-between")
+            for e in exp:
+                exprn = e.find("div", class_="display-flex flex-row justify-space-between")
 
-            if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
-                n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
-                exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
+                    n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
+                    exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                l = exprn.find("span", class_="t-14 t-normal")
-                exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                    exp_loc = ""
+                    if(exprn.find("span", class_="t-14 t-normal")):
+                        l = exprn.find("span", class_="t-14 t-normal")
+                        exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                t = exprn.find("span", class_="t-14 t-normal t-black--light")
-                exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                    exp_tm = ""
+                    if(exprn.find("span", class_="t-14 t-normal t-black--light")):
+                        t = exprn.find("span", class_="t-14 t-normal t-black--light")
+                        exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
-                experience.append(exp_dict)
+                    exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
+                    experience.append(exp_dict)
 
-                # check code
-                # print(exp_name + "\nLocation :\n" + exp_loc + "\nTime :\n" + exp_tm + "\n")
-                # print("\n")
-                
-    # Jika tidak ada
-    else:
-        experien = driver.page_source
-        soup = BeautifulSoup(experien, "html.parser")
-        expcl = soup.find_all("section", attrs={"data-view-name" : "profile-card"})
+                    # check code
+                    # print(exp_name + "\nLocation :\n" + exp_loc + "\nTime :\n" + exp_tm + "\n")
+                    # print("\n")
+                    
+        # Jika tidak ada
+        else:
+            experien = driver.page_source
+            soup = BeautifulSoup(experien, "html.parser")
+            expcl = soup.find_all("section", attrs={"data-view-name" : "profile-card"})
 
-        for i in expcl:
-            if(i.find("h2", class_="pvs-header__title text-heading-large")):
-                head = i.find("h2", class_="pvs-header__title text-heading-large")
-                if(head.find("span", attrs={"aria-hidden" : "true"}).text.strip() == "Experience"):
-                    exp = i.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
+            for i in expcl:
+                if(i.find("h2", class_="pvs-header__title text-heading-large")):
+                    head = i.find("h2", class_="pvs-header__title text-heading-large")
+                    if(head.find("span", attrs={"aria-hidden" : "true"}).text.strip() == "Experience"):
+                        exp = i.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
 
-                    for e in exp:
-                        exprn = e.find("div", class_="display-flex flex-row justify-space-between")
+                        for e in exp:
+                            exprn = e.find("div", class_="display-flex flex-row justify-space-between")
 
-                        if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
-                            n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
-                            exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                            if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
+                                n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
+                                exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                            l = exprn.find("span", class_="t-14 t-normal")
-                            exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                exp_loc = ""
+                                if(exprn.find("span", class_="t-14 t-normal")):
+                                    l = exprn.find("span", class_="t-14 t-normal")
+                                    exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                            t = exprn.find("span", class_="t-14 t-normal t-black--light")
-                            exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                exp_tm = ""
+                                if(exprn.find("span", class_="t-14 t-normal t-black--light")):
+                                    t = exprn.find("span", class_="t-14 t-normal t-black--light")
+                                    exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
-                            exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
-                            experience.append(exp_dict)
+                                exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
+                                experience.append(exp_dict)
 
-                            # check code
-                            # print(exp_name + "\nLocation :\n" + exp_loc + "\nTime :\n" + exp_tm + "\n")
-                            # print("\n")
+                                # check code
+                                # print(exp_name + "\nLocation :\n" + exp_loc + "\nTime :\n" + exp_tm + "\n")
+                                # print("\n")
 
-    profile_dict = {
-        "name" : name,
-        "work" : work,
-        "location" : loc,
-        "link" : dsnt_link,
-        "experiences" : experience
-    }
+        profile_dict = {
+            "name" : name,
+            "work" : work,
+            "location" : loc,
+            "link" : dsnt_link,
+            "experiences" : experience
+        }
 
-    if len(people_data) != 0:
-        i = 0
-        match_found = False
-        while i < len(people_data):
-            if re.search(profile_dict["name"], people_data[i]["name"], re.IGNORECASE):
-                people_data[i] = profile_dict
-                match_found = True
-                i = len(people_data)
-            i += 1
-        if match_found == False:
+        # Memeriksa jika data dengan nama user yang nama sudah ada pada database
+        if len(people_data) != 0:
+            i = 0
+            match_found = False
+            while i < len(people_data):
+                if re.search(profile_dict["name"], people_data[i]["name"], re.IGNORECASE):
+                    people_data[i] = profile_dict
+                    match_found = True
+                    i = len(people_data)
+                i += 1
+            if match_found == False:
+                people_data.append(profile_dict)
+        else:
             people_data.append(profile_dict)
-    else:
-        people_data.append(profile_dict)
 
-    sleep(randint(3, 6))
+        sleep(randint(3, 6))
 
+# Menuliskan database yang sudah terupdate pada file json database
 json_data = json.dumps(people_data, indent=3)
 with open("D:\\Dokumen\\dashboardPro\\people_data.json", "r+") as pd:
     pd.seek(0)
     pd.write(json_data)
+    pd.truncate()
 
+# Menutup selenium webdriver
 driver.close()

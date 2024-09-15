@@ -71,8 +71,17 @@
          "Database Admin",
          "Database DBA"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Ojo (Ernest) Audu. AZURE Certified",
+            "weight": 68
+         },
+         {
+            "name": "Victor Akoko",
+            "weight": 0
+         }
+      ],
+      "count": 2
    },
    {
       "name": "Data Architect",

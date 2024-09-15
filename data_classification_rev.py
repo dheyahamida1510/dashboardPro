@@ -34,7 +34,7 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                                 
                                 # mencari lama waktu tahun
                                 yr = 0
-                                y = re.search(r"·\s+(\d+)\s+(yr|yrs?)", e["time"])
+                                y = re.search(r"\u00b7\s+(\d+)\s+(yr|yrs?)", e["time"])
                                 if y:
                                     yr = int(y.group(1))
                                 # ubah tahun ke bentuk bulan
@@ -78,7 +78,7 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
                                         
                                         # mencari lama waktu tahun
                                         yr = 0
-                                        y = re.search(r"·\s+(\d+)\s+(yr|yrs?)", e["time"])
+                                        y = re.search(r"\u00b7\s+(\d+)\s+yrs?", e["time"])
                                         if y:
                                             yr = int(y.group(1))
                                         # ubah tahun ke bentuk bulan
@@ -86,7 +86,7 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
 
                                         # mencari lama waktu bulan
                                         mos = 0
-                                        m = re.search(r"\b(\d+)\s+(mo|mos?)\b", e["time"])
+                                        m = re.search(r"\b(\d+)\s+mos?\b", e["time"])
                                         if m:
                                             mos = int(m.group(1))
 
@@ -125,3 +125,4 @@ with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
     with open("D:\\Dokumen\\dashboardPro\\career_data.json", "r+") as cd:
         cd.seek(0)
         cd.write(json_data)
+        cd.truncate()

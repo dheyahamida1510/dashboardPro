@@ -330,5 +330,31 @@
             "time": "1999 - 2001 \u00b7 2 yrs"
          }
       ]
+   },
+   {
+      "name": "Ojo (Ernest) Audu. AZURE Certified",
+      "work": "SQL Server Database Administrator",
+      "location": "Plainfield, New Jersey, United States",
+      "link": "https://www.linkedin.com/in/ojo-audu-azure-certified/",
+      "experiences": [
+         {
+            "name": "SQL Database Administrator",
+            "location": "ModajPro IT Solutions (MPIT) \u00b7 Contract",
+            "time": "Feb 2019 - Present \u00b7 5 yrs 8 mos"
+         }
+      ]
+   },
+   {
+      "name": "Victor Akoko",
+      "work": "SQL Database Administrator/SQL Developer",
+      "location": "Upper Marlboro, Maryland, United States",
+      "link": "https://www.linkedin.com/in/victor-akoko-b85a2221a/",
+      "experiences": [
+         {
+            "name": "SQL Server Developer",
+            "location": "Baxter \u00b7 Full-time",
+            "time": "Aug 2022 - Present \u00b7 2 yrs 2 mos"
+         }
+      ]
    }
 ]
