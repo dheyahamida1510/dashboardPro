@@ -1,9 +1,7 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, html, dcc, ALL
-from dash_bootstrap_components._components.Container import Container
-import nbformat
-from nbconvert.preprocessors import ExecutePreprocessor
+# from dash_bootstrap_components._components.Container import Container
 
 from navbar import create_navbar
 from interactive_wordcloud import create_wordcloud
@@ -90,14 +88,15 @@ content = html.Div(
 )
 
 modal = create_modal()  # inisialisasi modal
-show_prof = html.Div(id="show-profile")
+# show_prof = html.Div(id="show-profile")
 store = dcc.Store(id="item-store", data=None)
 conf_click = dcc.Store(id="store-conf-clicks", data=0)
+
 confirmation_test = html.Div(id="check-confirmation")
 
 # app layout
 app.layout = html.Div(
-    [navbar, content, store, show_prof, modal, conf_click, confirmation_test],
+    [navbar, content, store, modal, conf_click, confirmation_test],
     style={
         "background": "linear-gradient(to right, #bb88ed, #ffbb00)",
         "height": "100vh",
