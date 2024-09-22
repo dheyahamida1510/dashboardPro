@@ -89,8 +89,8 @@ content = html.Div(
 
 modal = create_modal()  # inisialisasi modal
 # show_prof = html.Div(id="show-profile")
-store = dcc.Store(id="item-store", data=None)
-conf_click = dcc.Store(id="store-conf-clicks", data=0)
+store = dcc.Store(id="item-store", data=None) # variabel untuk menampung data indeks profile user
+conf_click = dcc.Store(id="store-conf-clicks", data=0) # variabel untuk menampung data klik pada confirmation panel
 
 confirmation_test = html.Div(id="check-confirmation")
 
@@ -208,20 +208,26 @@ def show_list(item):
 
 def modal_toggle(n_list, n_close, content, is_open, idx_stored):
 
+    # Menggunakan dash.callback_context untuk menentukan komponen yang akan men-trigger callback
     ctx = dash.callback_context
+    # jika callback context tidak mengalami trigger
     if not ctx.triggered:
         return is_open, "", "", idx_stored, n_list
 
+    # Mencari id dari komponen yang melakukan trigger pada callback
     trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
+    # jika id adalah id button untuk menutup modal (modal-close)
     if trigger_id == "modal-close":
+        # tutup modal dan reset komponen n_clicks dari list profile user
         return False, "", "", idx_stored, [0]*len(n_list)
 
+    # Memeriksa komponen n_clicks pada list profile user
     for i, n in enumerate(n_list):
         if n and n > 0:
-            title = content[i][0]["props"]["children"][0]["props"]["children"]
-            body = profile_details(title)
+            name = content[i][0]["props"]["children"][0]["props"]["children"]
+            body = profile_details(name)
             n_list = [0]*len(n_list)
-            return not is_open, title, body, i, n_list
+            return not is_open, name, body, i, n_list
 
     return is_open, "", "", idx_stored, n_list
 
