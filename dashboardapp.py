@@ -192,7 +192,6 @@ def show_list(item):
         Output("modal", "is_open"),
         Output("modal-header", "children"),
         Output("modal-body", "children"),
-        Output("item-store", "data"),
         Output({"type": "list", "index": ALL}, "n_clicks")
     ],
     [
@@ -201,35 +200,41 @@ def show_list(item):
     ],
     [
         State({"type": "list", "index": ALL}, "children"),
-        State("modal", "is_open"),
-        State("item-store", "data")
+        State("modal", "is_open")
     ]
 )
 
-def modal_toggle(n_list, n_close, content, is_open, idx_stored):
+def modal_toggle(n_list, n_close, content, is_open):
 
-    # Menggunakan dash.callback_context untuk menentukan komponen yang akan men-trigger callback
+    # Fungsi untuk menutup modal
+    # menggunakan dash.callback_context untuk menentukan komponen yang akan men-trigger callback
     ctx = dash.callback_context
     # jika callback context tidak mengalami trigger
     if not ctx.triggered:
-        return is_open, "", "", idx_stored, n_list
+        return is_open, "", "", n_list
 
-    # Mencari id dari komponen yang melakukan trigger pada callback
+    # mencari id dari komponen yang melakukan trigger pada callback
     trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
     # jika id adalah id button untuk menutup modal (modal-close)
     if trigger_id == "modal-close":
         # tutup modal dan reset komponen n_clicks dari list profile user
-        return False, "", "", idx_stored, [0]*len(n_list)
+        return False, "", "", [0]*len(n_list)
 
+    # Fungsi untuk mengisi dan membuka modal
     # Memeriksa komponen n_clicks pada list profile user
     for i, n in enumerate(n_list):
+        # jika terdapat komponen n_clicks yang tidak NONE dan tidak bernilai 0
         if n and n > 0:
+            # Membuat detail profile
+            # mendapatkan nama user melalui children dari list profile user
             name = content[i][0]["props"]["children"][0]["props"]["children"]
+            # membuat detail profile user berupa list experience
             body = profile_details(name)
-            n_list = [0]*len(n_list)
-            return not is_open, name, body, i, n_list
+            # membuka modal dan menuliskan detail profile pada modal, reset n_clicks
+            return not is_open, name, body, [0]*len(n_list)
 
-    return is_open, "", "", idx_stored, n_list
+    # Modal tidak ditampilkan secara default
+    return is_open, "", "", n_list
 
 # modal
 """
