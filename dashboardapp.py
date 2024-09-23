@@ -118,36 +118,29 @@ def show_navbar(n, is_open):
 
 # update confirmation panel
 @app.callback(
-    [
-        Output("confirmation-panel", "is_open"),
-        Output("store-conf-clicks", "data")
-    ],
+    Output("confirmation-panel", "is_open"),
     [
         Input("update-data", "n_clicks"),
         Input("yes-update", "n_clicks"),
         Input("no-update", "n_clicks")
     ],
-    [
-        State("confirmation-panel", "is_open"),
-        State("store-conf-clicks", "data")
-    ]
+    [State("confirmation-panel", "is_open")]
 )
-def confirmation_panel(n_open, n_yes, n_no, is_open, clicks_stored):
+def confirmation_panel(n_open, n_yes, n_no, is_open):
 
     ctx = dash.callback_context
 
     if not ctx.triggered:
-        return is_open, clicks_stored
+        return is_open
 
     trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
 
-    if trigger_id == "update-data" and n_open > clicks_stored:
-        clicks_stored = n_open
-        return True, clicks_stored
+    if trigger_id == "update-data":
+        return True
     elif trigger_id in ["yes-update", "no-update"]:
-        return False, 0  
+        return False
 
-    return is_open, clicks_stored
+    return is_open
 
 @app.callback(
     Output("check-confirmation", "children"),
@@ -211,6 +204,7 @@ def modal_toggle(n_list, n_close, content, is_open):
     ctx = dash.callback_context
     # jika callback context tidak mengalami trigger
     if not ctx.triggered:
+        # tidak melakukan apapun
         return is_open, "", "", n_list
 
     # mencari id dari komponen yang melakukan trigger pada callback
@@ -231,9 +225,8 @@ def modal_toggle(n_list, n_close, content, is_open):
             # membuat detail profile user berupa list experience
             body = profile_details(name)
             # membuka modal dan menuliskan detail profile pada modal, reset n_clicks
-            return not is_open, name, body, [0]*len(n_list)
+            return True, name, body, [0]*len(n_list)
 
-    # Modal tidak ditampilkan secara default
     return is_open, "", "", n_list
 
 # modal
