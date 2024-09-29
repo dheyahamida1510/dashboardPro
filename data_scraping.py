@@ -171,12 +171,12 @@ for dsnt_link in link_list:
             "experiences" : experience
         }
 
-        # Memeriksa jika data dengan nama user yang nama sudah ada pada database
+        # Memeriksa jika data dengan user yang sama sudah ada pada database
         if len(people_data) != 0:
             i = 0
             match_found = False
             while i < len(people_data):
-                if re.search(profile_dict["name"], people_data[i]["name"], re.IGNORECASE):
+                if profile_dict["name"] == people_data[i]["name"] or profile_dict["link"] == people_data[i]["link"]:
                     people_data[i] = profile_dict
                     match_found = True
                     i = len(people_data)
