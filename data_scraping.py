@@ -186,7 +186,7 @@ for dsnt_link in link_list:
         else:
             people_data.append(profile_dict)
 
-        sleep(randint(3, 6))
+        sleep(randint(2, 3))
 
 # Menuliskan database yang sudah terupdate pada file json database
 json_data = json.dumps(people_data, indent=3)
