@@ -12,12 +12,12 @@
          },
          {
             "name": "Host live",
-            "location": "",
+            "location": "Enumik.Id \u00b7 Part-time",
             "time": "Jul 2024 - Present \u00b7 4 mos"
          },
          {
             "name": "Packaging Operator",
-            "location": "",
+            "location": "Enumik.Id \u00b7 Part-time",
             "time": "Aug 2022 - Present \u00b7 2 yrs 3 mos"
          },
          {
@@ -36,7 +36,7 @@
             "time": "Jan 2019 - Jan 2019 \u00b7 1 mo"
          }
       ],
-      "modified": "2024-10-17 12:30:05.496052"
+      "modified": "2024-10-17 17:24:08.163685"
    },
    {
       "name": "Fatin Fauziyyah Tiras Putri",
@@ -55,7 +55,7 @@
             "time": "Jul 2020 - Dec 2023 \u00b7 3 yrs 6 mos"
          }
       ],
-      "modified": "2024-10-17 12:30:18.057763"
+      "modified": "2024-10-17 17:24:18.929234"
    },
    {
       "name": "Davina Cherryl Aurelia",
@@ -63,7 +63,7 @@
       "location": "Bandung, West Java, Indonesia",
       "link": "https://www.linkedin.com/in/davina-cherryl-aurelia-1a7b2b277/",
       "experiences": [],
-      "modified": "2024-10-17 12:30:28.874076"
+      "modified": "2024-10-17 17:24:30.835262"
    },
    {
       "name": "Sifa Marcella Fardhani",
@@ -73,16 +73,16 @@
       "experiences": [
          {
             "name": "Secretary",
-            "location": "",
+            "location": "Neuronworks Indonesia \u00b7 Full-time",
             "time": "Mar 2023 - Present \u00b7 1 yr 8 mos"
          },
          {
             "name": "Technical Writer",
-            "location": "",
+            "location": "Neuronworks Indonesia \u00b7 Full-time",
             "time": "Jan 2020 - Feb 2023 \u00b7 3 yrs 2 mos"
          }
       ],
-      "modified": "2024-10-17 12:30:38.499802"
+      "modified": "2024-10-17 17:24:40.795594"
    },
    {
       "name": "Muhammad Nadzir Azhar",
@@ -116,6 +116,6 @@
             "time": "Jan 2022 - Jun 2022 \u00b7 6 mos"
          }
       ],
-      "modified": "2024-10-17 12:30:50.866224"
+      "modified": "2024-10-17 17:24:53.228111"
    }
 ]
