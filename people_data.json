@@ -1,360 +1,121 @@
 [
    {
-      "name": "Sai Kumar Popuri",
-      "work": "Data Science & AI leader | Driving Margin and CX with AI | PhD in AI. Work visa: Green Card EAD",
-      "location": "Des Moines, Iowa, United States",
-      "link": "https://www.linkedin.com/in/saiku1/",
+      "name": "Vina Anggraeni",
+      "work": "Educational Administration at Indonesia University of Education | Administration Support Intern at Telkom CorpU",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/vina-anggraeni-b44a99265/",
       "experiences": [
          {
-            "name": "Head of Data Science, Director",
-            "location": "Casey's \u00b7 Full-time",
-            "time": "Jun 2023 - Jun 2024 \u00b7 1 yr 1 mo"
+            "name": "Administration Support #MSIB Batch 7",
+            "location": "Telkom Indonesia \u00b7 Apprenticeship",
+            "time": "Sep 2024 - Present \u00b7 2 mos"
          },
          {
-            "name": "Director, Data Science - Strategy & Transformation",
-            "location": "Bed Bath & Beyond \u00b7 Full-time",
-            "time": "Mar 2022 - Apr 2023 \u00b7 1 yr 2 mos"
+            "name": "Host live",
+            "location": "",
+            "time": "Jul 2024 - Present \u00b7 4 mos"
          },
          {
-            "name": "Principal Data Science Lead - Inventory & Replenishment",
-            "location": "Petco \u00b7 Full-time",
-            "time": "Apr 2020 - Mar 2022 \u00b7 2 yrs"
+            "name": "Packaging Operator",
+            "location": "",
+            "time": "Aug 2022 - Present \u00b7 2 yrs 3 mos"
          },
          {
-            "name": "Data Scientist (ML Engineer)",
-            "location": "Walmart \u00b7 Full-time",
-            "time": "Jan 2018 - Apr 2021 \u00b7 3 yrs 4 mos"
+            "name": "Pendamping Penyusun Perencanaan dan Pengembangan SDM #MSIB Batch 6",
+            "location": "Kementerian Pekerjaan Umum dan Perumahan Rakyat \u00b7 Apprenticeship",
+            "time": "Feb 2024 - Jun 2024 \u00b7 5 mos"
          },
          {
-            "name": "AI / ML Scientist",
-            "location": "Multiple Companies",
-            "time": "Oct 2011 - Dec 2017 \u00b7 6 yrs 3 mos"
+            "name": "Aktris Tritagonis",
+            "location": "SMAN 1 Soreang \u00b7 Seasonal",
+            "time": "Dec 2019 - Dec 2019 \u00b7 1 mo"
          },
          {
-            "name": "Senior Manager / VP - Energy Trading Analytics",
-            "location": "Macquarie Group \u00b7 Full-time",
-            "time": "2009 - 2011 \u00b7 2 yrs"
-         },
-         {
-            "name": "Data Scientist - Risk Management & Energy Trading",
-            "location": "UBS \u00b7 Full-time",
-            "time": "2006 - 2009 \u00b7 3 yrs"
-         },
-         {
-            "name": "Sr. Member - Technical Staff  / Sr. Software Engineer",
-            "location": "The D. E. Shaw Group \u00b7 Full-time",
-            "time": "Jul 2001 - Jul 2004 \u00b7 3 yrs 1 mo"
+            "name": "Cerdas Cermat PAI",
+            "location": "SMAN 1 Soreang \u00b7 Seasonal",
+            "time": "Jan 2019 - Jan 2019 \u00b7 1 mo"
          }
-      ]
+      ],
+      "modified": "2024-10-17 12:30:05.496052"
    },
    {
-      "name": "Tarandeep Singh",
-      "work": "Data Scientist | Prev @ Apple, Amazon | MS in Data Science | Gen AI",
-      "location": "Boston, Massachusetts, United States",
-      "link": "https://www.linkedin.com/in/tarandeep-singh-947135104/",
+      "name": "Fatin Fauziyyah Tiras Putri",
+      "work": "Language and Education enthusiast.",
+      "location": "Kabupaten Bandung Barat, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/fatin-fauziyyah-tiras-putri-b723aa284/",
       "experiences": [
          {
-            "name": "Machine Learning Engineer",
-            "location": "Canaria \u00b7 Full-time",
-            "time": "Jul 2024 - Present \u00b7 3 mos"
+            "name": "English Teacher",
+            "location": "SMPN 1 Lembang \u00b7 Contract",
+            "time": "Jul 2020 - Present \u00b7 4 yrs 4 mos"
          },
          {
-            "name": "Data Validation Assistant",
-            "location": "Northeastern University \u00b7 Part-time",
-            "time": "Feb 2022 - Present \u00b7 2 yrs 8 mos"
-         },
-         {
-            "name": "Data Scientist",
-            "location": "Apple \u00b7 Internship",
-            "time": "Jun 2023 - Sep 2023 \u00b7 4 mos"
-         },
-         {
-            "name": "Data Scientist",
-            "location": "Amazon Global Robotics \u00b7 Internship",
-            "time": "Jan 2023 - Jun 2023 \u00b7 6 mos"
-         },
-         {
-            "name": "Product Analyst",
-            "location": "Sprinklr \u00b7 Full-time",
-            "time": "Nov 2020 - Jan 2022 \u00b7 1 yr 3 mos"
-         },
-         {
-            "name": "Data Science and Analytics Associate",
-            "location": "KPMG India \u00b7 Full-time",
-            "time": "Jun 2017 - Nov 2020 \u00b7 3 yrs 6 mos"
-         },
-         {
-            "name": "Research Intern, Machine Learning & Natural Language Processing",
-            "location": "Defence Research and Development Organisation (DRDO) \u00b7 Internship",
-            "time": "Dec 2015 - Jun 2017 \u00b7 1 yr 7 mos"
-         },
-         {
-            "name": "Summer Research Intern, Information Retrieval",
-            "location": "Indian Navy  \u00b7 Internship",
-            "time": "Jun 2015 - Jul 2015 \u00b7 2 mos"
+            "name": "English Teacher",
+            "location": "Balai Bahasa UPI \u00b7 Contract",
+            "time": "Jul 2020 - Dec 2023 \u00b7 3 yrs 6 mos"
          }
-      ]
+      ],
+      "modified": "2024-10-17 12:30:18.057763"
    },
    {
-      "name": "Sylvester Kwame Inkoom, PhD",
-      "work": "Senior Director - Data Science | Machine Learning Engineering, Eli Lilly and Company",
-      "location": "Tallahassee, Florida, United States",
-      "link": "https://www.linkedin.com/in/sylvester-kwame-inkoom-phd-6357b560/",
-      "experiences": [
-         {
-            "name": "Senior Director - Consumer Data Science | Machine Learning Eng., Business Insights & Analytics",
-            "location": "Eli Lilly and Company",
-            "time": "Apr 2023 - Present \u00b7 1 yr 6 mos"
-         },
-         {
-            "name": "Data Scientist",
-            "location": "The Hertz Corporation",
-            "time": "May 2019 - Dec 2019 \u00b7 8 mos"
-         },
-         {
-            "name": "Summer Intern (Intelligent Transportation Systems)",
-            "location": "Jacobs",
-            "time": "Jun 2018 - Aug 2018 \u00b7 3 mos"
-         },
-         {
-            "name": "Engineer",
-            "location": "UENR",
-            "time": "Feb 2012 - Jul 2013 \u00b7 1 yr 6 mos"
-         },
-         {
-            "name": "Civil Engineering Intern",
-            "location": "Shinsung Constructions Limited",
-            "time": "May 2010 - Jul 2010 \u00b7 3 mos"
-         },
-         {
-            "name": "Transportation Engineering Intern",
-            "location": "Jeheung Constructions Limited",
-            "time": "Jun 2009 - Jul 2009 \u00b7 2 mos"
-         }
-      ]
+      "name": "Davina Cherryl Aurelia",
+      "work": "German Language Education Student at Indonesia University of Education | Language Enthusiast | Care for Mental Health",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/davina-cherryl-aurelia-1a7b2b277/",
+      "experiences": [],
+      "modified": "2024-10-17 12:30:28.874076"
    },
    {
-      "name": "Ameya Kabre",
-      "work": "Software Engineer @ Citadel | Amazon | VMware | Arista | NVIDIA | M.S. in Computer Science @ UCLA",
-      "location": "Chicago, Illinois, United States",
-      "link": "https://www.linkedin.com/in/ameya-kabre/",
+      "name": "Sifa Marcella Fardhani",
+      "work": "Secretary at Neuronworks Indonesia",
+      "location": "Greater Bandung",
+      "link": "https://www.linkedin.com/in/sifa-marcella-fardhani-73a46b199/",
       "experiences": [
          {
-            "name": "Software Engineer",
-            "location": "Citadel \u00b7 Full-time",
-            "time": "Jan 2020 - Present \u00b7 4 yrs 9 mos"
+            "name": "Secretary",
+            "location": "",
+            "time": "Mar 2023 - Present \u00b7 1 yr 8 mos"
          },
          {
-            "name": "Software Development Engineer 2",
-            "location": "Amazon \u00b7 Full-time",
-            "time": "Feb 2018 - Jan 2020 \u00b7 2 yrs"
-         },
-         {
-            "name": "Intern, Member of Technical Staff vAPI",
-            "location": "VMware",
-            "time": "Jun 2017 - Sep 2017 \u00b7 4 mos"
-         },
-         {
-            "name": "Graduate Teaching Assistant",
-            "location": "University of California, Los Angeles",
-            "time": "Jan 2017 - Jun 2017 \u00b7 6 mos"
-         },
-         {
-            "name": "Senior Member of Technical Staff",
-            "location": "Mojo Networks, Inc.",
-            "time": "Jun 2014 - Jun 2016 \u00b7 2 yrs 1 mo"
-         },
-         {
-            "name": "Intern",
-            "location": "NVIDIA",
-            "time": "Jul 2013 - Apr 2014 \u00b7 10 mos"
+            "name": "Technical Writer",
+            "location": "",
+            "time": "Jan 2020 - Feb 2023 \u00b7 3 yrs 2 mos"
          }
-      ]
+      ],
+      "modified": "2024-10-17 12:30:38.499802"
    },
    {
-      "name": "Michael Cochran",
-      "work": "Senior Software Engineer | Python and Java | LION",
-      "location": "Barnegat, New Jersey, United States",
-      "link": "https://www.linkedin.com/in/mdcochran/",
+      "name": "Muhammad Nadzir Azhar",
+      "work": "3D Modeller | 3D Design Jewelry | Graphic Design & Video Editor| Fresh Graduated Multimedia of Education",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/muhammad-nadzir-azhar-0bab27257/",
       "experiences": [
          {
-            "name": "Senior Software Engineer",
-            "location": "OpenText",
-            "time": "2013 - 2018 \u00b7 5 yrs"
+            "name": "3D Modeler",
+            "location": "PT Emas Murni Asli \u00b7 Full-time",
+            "time": "Nov 2023 - Present \u00b7 1 yr"
          },
          {
-            "name": "Developer",
-            "location": "AT&T",
-            "time": "2013 - 2013 \u00b7 Less than a year"
+            "name": "Graphic Designer",
+            "location": "PT. Yukhebat Digital Inovasi \u00b7 Full-time",
+            "time": "Aug 2023 - Oct 2023 \u00b7 3 mos"
          },
          {
-            "name": "Software Engineer",
-            "location": "Ribbon Communications",
-            "time": "2010 - 2012 \u00b7 2 yrs"
+            "name": "Graphic Designer & Video Editor",
+            "location": "INFOCIMAHI \u00b7 Internship",
+            "time": "May 2023 - Jul 2023 \u00b7 3 mos"
          },
          {
-            "name": "Software Support Engineer",
-            "location": "BlackStratus, Inc.",
-            "time": "2009 - 2010 \u00b7 1 yr"
-         },
-         {
-            "name": "Software Engineer",
-            "location": "RIVA Networks",
-            "time": "2007 - 2008 \u00b7 1 yr"
-         },
-         {
-            "name": "Associate",
-            "location": "Princeton Consultants",
-            "time": "2006 - 2007 \u00b7 1 yr"
-         }
-      ]
-   },
-   {
-      "name": "Maddy Randle",
-      "work": "Front End Web Developer",
-      "location": "Dallas-Fort Worth Metroplex",
-      "link": "https://www.linkedin.com/in/maddyrandle/",
-      "experiences": [
-         {
-            "name": "Software Developer",
-            "location": "Caffeinated Beauty Bar \u00b7 Contract",
-            "time": "May 2021 - Jul 2021 \u00b7 3 mos"
-         },
-         {
-            "name": "Front-End Engineer",
-            "location": "Via TRM \u00b7 Full-time",
-            "time": "Nov 2020 - Feb 2021 \u00b7 4 mos"
-         },
-         {
-            "name": "Front-End Engineer",
-            "location": "Turing School of Software & Design \u00b7 Full-time",
-            "time": "Sep 2019 - Aug 2020 \u00b7 1 yr"
-         },
-         {
-            "name": "Customer Loyalty Specialist",
-            "location": "American Airlines \u00b7 Full-time",
-            "time": "Aug 2015 - Aug 2019 \u00b7 4 yrs 1 mo"
-         },
-         {
-            "name": "Patient Service Representative",
-            "location": "Southwest Ear Nose & Throat \u00b7 Part-time",
-            "time": "Aug 2010 - Aug 2012 \u00b7 2 yrs 1 mo"
-         }
-      ]
-   },
-   {
-      "name": "Kevin Cendana",
-      "work": "Frontend Developer",
-      "location": "Sacramento, California, United States",
-      "link": "https://www.linkedin.com/in/kevincendana/",
-      "experiences": [
-         {
-            "name": "Frontend Web Developer",
-            "location": "Dream Arcades \u00b7 Part-time",
-            "time": "Mar 2024 - Present \u00b7 7 mos"
-         },
-         {
-            "name": "Team Member",
-            "location": "Edible Arrangements \u00b7 Part-time",
-            "time": "Jan 2020 - Aug 2021 \u00b7 1 yr 8 mos"
-         }
-      ]
-   },
-   {
-      "name": "Shubhada Bagal",
-      "work": "Product Analyst @ UPS",
-      "location": "United States",
-      "link": "https://www.linkedin.com/in/shubhada-bagal/",
-      "experiences": [
-         {
-            "name": "Associate Product Manager",
-            "location": "Aspiring Product Managers Club @ Northeastern University \u00b7 Freelance",
+            "name": "3D Modeler",
+            "location": "PT Mafela Ranca Wana \u00b7 Internship",
             "time": "Jul 2022 - Dec 2022 \u00b7 6 mos"
          },
          {
-            "name": "Systems Engineer - QA Analyst",
-            "location": "Infosys \u00b7 Full-time",
-            "time": "Feb 2020 - Dec 2021 \u00b7 1 yr 11 mos"
+            "name": "Game Designer",
+            "location": "Indonesia Cyber Education Institute",
+            "time": "Jan 2022 - Jun 2022 \u00b7 6 mos"
          }
-      ]
-   },
-   {
-      "name": "Zaretta Hammond",
-      "work": "Teacher Educator | Literacy Advocate | Believer in the Science of Learning",
-      "location": "Little Rock, Arkansas, United States",
-      "link": "https://www.linkedin.com/in/zaretta-hammond-2b122ba/",
-      "experiences": [
-         {
-            "name": "Founder and CEO",
-            "location": "Transformative Learning Solutions, LLC",
-            "time": "2007 - Present \u00b7 17 yrs 9 mos"
-         },
-         {
-            "name": "Board Trustee",
-            "location": "Center for the Collaborative Classroom",
-            "time": "Oct 2018 - Present \u00b7 6 yrs"
-         },
-         {
-            "name": "Advisory Committee Member",
-            "location": "Consortium of Reading Excellence (C.O.R.E.)",
-            "time": "Jan 2020 - Present \u00b7 4 yrs 9 mos"
-         },
-         {
-            "name": "Strategic Advisor",
-            "location": "The Aspen Institute Education & Society Program \u00b7 Contract",
-            "time": "Jan 2020 - Dec 2021 \u00b7 2 yrs"
-         },
-         {
-            "name": "Lecturer -- Foundations of Adolescent Literacy | Kalmanovitz School of Education",
-            "location": "Saint Mary's College of California",
-            "time": "Aug 2013 - Nov 2015 \u00b7 2 yrs 4 mos"
-         },
-         {
-            "name": "Curriculum Development Manager",
-            "location": "National Equity Project",
-            "time": "2008 - 2013 \u00b7 5 yrs"
-         },
-         {
-            "name": "Professional Development Specialist",
-            "location": "Bay Area Coalition for Equitable Schools",
-            "time": "2001 - 2005 \u00b7 4 yrs"
-         },
-         {
-            "name": "Evaluation Specialist",
-            "location": "InSites",
-            "time": "1989 - 2002 \u00b7 13 yrs"
-         },
-         {
-            "name": "Program Director, The Equity Initiative",
-            "location": "Bay Area School Reform Collaborative (BASRC)",
-            "time": "1999 - 2001 \u00b7 2 yrs"
-         }
-      ]
-   },
-   {
-      "name": "Ojo (Ernest) Audu. AZURE Certified",
-      "work": "SQL Server Database Administrator",
-      "location": "Plainfield, New Jersey, United States",
-      "link": "https://www.linkedin.com/in/ojo-audu-azure-certified/",
-      "experiences": [
-         {
-            "name": "SQL Database Administrator",
-            "location": "ModajPro IT Solutions (MPIT) \u00b7 Contract",
-            "time": "Feb 2019 - Present \u00b7 5 yrs 8 mos"
-         }
-      ]
-   },
-   {
-      "name": "Victor Akoko",
-      "work": "SQL Database Administrator/SQL Developer",
-      "location": "Upper Marlboro, Maryland, United States",
-      "link": "https://www.linkedin.com/in/victor-akoko-b85a2221a/",
-      "experiences": [
-         {
-            "name": "SQL Server Developer",
-            "location": "Baxter \u00b7 Full-time",
-            "time": "Aug 2022 - Present \u00b7 2 yrs 2 mos"
-         }
-      ]
+      ],
+      "modified": "2024-10-17 12:30:50.866224"
    }
 ]
