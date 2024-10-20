@@ -19,21 +19,8 @@
          "Data Analytics Specialist",
          "Data Science"
       ],
-      "people": [
-         {
-            "name": "Sai Kumar Popuri",
-            "weight": 127
-         },
-         {
-            "name": "Tarandeep Singh",
-            "weight": 52
-         },
-         {
-            "name": "Sylvester Kwame Inkoom, PhD",
-            "weight": 26
-         }
-      ],
-      "count": 3
+      "people": [],
+      "count": 0
    },
    {
       "name": "Data Analyst",
@@ -71,17 +58,8 @@
          "Database Admin",
          "Database DBA"
       ],
-      "people": [
-         {
-            "name": "Ojo (Ernest) Audu. AZURE Certified",
-            "weight": 68
-         },
-         {
-            "name": "Victor Akoko",
-            "weight": 0
-         }
-      ],
-      "count": 2
+      "people": [],
+      "count": 0
    },
    {
       "name": "Data Architect",
@@ -121,23 +99,15 @@
       ],
       "people": [
          {
-            "name": "Michael Cochran",
-            "weight": 96
+            "name": "Reyhan Fikri Dzikriansyah",
+            "weight": 31
          },
          {
-            "name": "Ameya Kabre",
-            "weight": 81
-         },
-         {
-            "name": "Sai Kumar Popuri",
-            "weight": 37
-         },
-         {
-            "name": "Maddy Randle",
-            "weight": 3
+            "name": "Muhammad Rheza Alvarez Satriadipura",
+            "weight": 10
          }
       ],
-      "count": 4
+      "count": 2
    },
    {
       "name": "Web Developer",
@@ -154,15 +124,11 @@
       ],
       "people": [
          {
-            "name": "Kevin Cendana",
-            "weight": 7
-         },
-         {
-            "name": "Maddy Randle",
-            "weight": 0
+            "name": "Muhammad Rheza Alvarez Satriadipura",
+            "weight": 2
          }
       ],
-      "count": 2
+      "count": 1
    },
    {
       "name": "Computer Hardware Engineer",
@@ -204,24 +170,10 @@
          "AI Engineer",
          "Artificial Intelligence Engineer",
          "Machine Learning Engineer",
-         "Machine Learning Engineering",
-         "AI"
+         "Machine Learning Engineering"
       ],
-      "people": [
-         {
-            "name": "Sai Kumar Popuri",
-            "weight": 75
-         },
-         {
-            "name": "Tarandeep Singh",
-            "weight": 3
-         },
-         {
-            "name": "Sylvester Kwame Inkoom, PhD",
-            "weight": 0
-         }
-      ],
-      "count": 3
+      "people": [],
+      "count": 0
    },
    {
       "name": "Cloud Architect",
@@ -236,14 +188,58 @@
       "career": [],
       "people": [
          {
-            "name": "Shubhada Bagal",
+            "name": "Vina Anggraeni",
             "weight": 0
          },
          {
-            "name": "Zaretta Hammond",
+            "name": "Fatin Fauziyyah Tiras Putri",
+            "weight": 0
+         },
+         {
+            "name": "Davina Cherryl Aurelia",
+            "weight": 0
+         },
+         {
+            "name": "Sifa Marcella Fardhani",
+            "weight": 0
+         },
+         {
+            "name": "Muhammad Nadzir Azhar",
+            "weight": 0
+         },
+         {
+            "name": "Mahyati -",
+            "weight": 0
+         },
+         {
+            "name": "Hanif Syafrian Purnama",
+            "weight": 0
+         },
+         {
+            "name": "Gina Istiqomah",
+            "weight": 0
+         },
+         {
+            "name": "Salsabila Fitri Pratami",
+            "weight": 0
+         },
+         {
+            "name": "Muhammad Kautsar",
+            "weight": 0
+         },
+         {
+            "name": "Denisya Nurul Azizah",
+            "weight": 0
+         },
+         {
+            "name": "Syifa Kudiarto",
+            "weight": 0
+         },
+         {
+            "name": "Hardiansah Faisal Rito",
             "weight": 0
          }
       ],
-      "count": 2
+      "count": 13
    }
 ]
