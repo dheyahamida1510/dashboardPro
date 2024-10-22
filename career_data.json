@@ -99,6 +99,10 @@
       ],
       "people": [
          {
+            "name": "Hadian Mutakin",
+            "weight": 51
+         },
+         {
             "name": "Reyhan Fikri Dzikriansyah",
             "weight": 31
          },
@@ -107,7 +111,7 @@
             "weight": 10
          }
       ],
-      "count": 2
+      "count": 3
    },
    {
       "name": "Web Developer",
@@ -161,8 +165,13 @@
          "Interaction Designer",
          "Experience Designer"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Gunawan Busyaeri",
+            "weight": 0
+         }
+      ],
+      "count": 1
    },
    {
       "name": "AI Engineer",
@@ -238,8 +247,40 @@
          {
             "name": "Hardiansah Faisal Rito",
             "weight": 0
+         },
+         {
+            "name": "Rita Haryati",
+            "weight": 0
+         },
+         {
+            "name": "Agung Hari Pramono",
+            "weight": 0
+         },
+         {
+            "name": "Dieke Husna Kamilla",
+            "weight": 0
+         },
+         {
+            "name": "Cinta Delvianne",
+            "weight": 0
+         },
+         {
+            "name": "Khusnul Dwi Nurfalah",
+            "weight": 0
+         },
+         {
+            "name": "Irfan Muhammad Faisal",
+            "weight": 0
+         },
+         {
+            "name": "Arvian Triantoro",
+            "weight": 0
+         },
+         {
+            "name": "Dimas Handi",
+            "weight": 0
          }
       ],
-      "count": 13
+      "count": 21
    }
 ]
