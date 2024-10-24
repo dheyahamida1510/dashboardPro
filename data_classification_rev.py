@@ -6,7 +6,7 @@ with open("D:\\Dokumen\\dashboardPro\\people_data.json", "r") as pd:
     people_data = json.load(pd)
 
 # membuka file template database career
-with open("D:\\Dokumen\\career_data_temp.json", "r+") as cdf:
+with open("D:\\Dokumen\\dashboardPro\\career_data_temp.json", "r+") as cdf:
     career_data = json.load(cdf)
 
     # input data nama-nama ke database career

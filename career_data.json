@@ -32,8 +32,13 @@
          "Data Technician",
          "Data Abstractor"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Muhammad Nurharianto",
+            "weight": 6
+         }
+      ],
+      "count": 1
    },
    {
       "name": "Database Developer",
@@ -45,8 +50,13 @@
          "Database Programmer",
          "Data Developer"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Muhammad Nurharianto",
+            "weight": 32
+         }
+      ],
+      "count": 1
    },
    {
       "name": "Database Administrator",
@@ -109,9 +119,13 @@
          {
             "name": "Muhammad Rheza Alvarez Satriadipura",
             "weight": 10
+         },
+         {
+            "name": "Wahyu Tricahyo",
+            "weight": 7
          }
       ],
-      "count": 3
+      "count": 4
    },
    {
       "name": "Web Developer",
@@ -128,11 +142,19 @@
       ],
       "people": [
          {
+            "name": "Wiwi Juwita",
+            "weight": 40
+         },
+         {
+            "name": "Muhammad Nur Ilman",
+            "weight": 18
+         },
+         {
             "name": "Muhammad Rheza Alvarez Satriadipura",
             "weight": 2
          }
       ],
-      "count": 1
+      "count": 3
    },
    {
       "name": "Computer Hardware Engineer",
@@ -167,11 +189,15 @@
       ],
       "people": [
          {
+            "name": "Masyita I.",
+            "weight": 16
+         },
+         {
             "name": "Gunawan Busyaeri",
             "weight": 0
          }
       ],
-      "count": 1
+      "count": 2
    },
    {
       "name": "AI Engineer",
@@ -279,8 +305,48 @@
          {
             "name": "Dimas Handi",
             "weight": 0
+         },
+         {
+            "name": "uga nugraha syafari",
+            "weight": 0
+         },
+         {
+            "name": "Nadissa Qirshani Rahman",
+            "weight": 0
+         },
+         {
+            "name": "Irmadel Aurelliana",
+            "weight": 0
+         },
+         {
+            "name": "arief (rahman) Ibrahim",
+            "weight": 0
+         },
+         {
+            "name": "Karina Permata",
+            "weight": 0
+         },
+         {
+            "name": "Fauzi Nur",
+            "weight": 0
+         },
+         {
+            "name": "Neng Nurhasanah",
+            "weight": 0
+         },
+         {
+            "name": "Elma Liawati",
+            "weight": 0
+         },
+         {
+            "name": "Shafira Widihardjo",
+            "weight": 0
+         },
+         {
+            "name": "Muhamad Habib Ibnu H.",
+            "weight": 0
          }
       ],
-      "count": 21
+      "count": 31
    }
 ]
