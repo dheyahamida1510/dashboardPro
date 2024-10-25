@@ -54,9 +54,13 @@
          {
             "name": "Muhammad Nurharianto",
             "weight": 32
+         },
+         {
+            "name": "Misdan Wijaya",
+            "weight": 12
          }
       ],
-      "count": 1
+      "count": 2
    },
    {
       "name": "Database Administrator",
@@ -81,8 +85,13 @@
          "BI Architect",
          "Data Warehouse Architect"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Misdan Wijaya",
+            "weight": 22
+         }
+      ],
+      "count": 1
    },
    {
       "name": "Information Security Analyst",
@@ -139,9 +148,13 @@
          {
             "name": "Reihan Manzis Syahputra",
             "weight": 4
+         },
+         {
+            "name": "Misdan Wijaya",
+            "weight": 3
          }
       ],
-      "count": 8
+      "count": 9
    },
    {
       "name": "Web Developer",
@@ -162,12 +175,20 @@
             "weight": 56
          },
          {
+            "name": "Jaka Septiadi",
+            "weight": 44
+         },
+         {
             "name": "Wiwi Juwita",
             "weight": 40
          },
          {
             "name": "Rizal Purnomo",
             "weight": 30
+         },
+         {
+            "name": "Deffin Achmaddifa",
+            "weight": 23
          },
          {
             "name": "Muhammad Nur Ilman",
@@ -182,8 +203,16 @@
             "weight": 12
          },
          {
+            "name": "Misdan Wijaya",
+            "weight": 12
+         },
+         {
             "name": "Reihan Manzis Syahputra",
             "weight": 10
+         },
+         {
+            "name": "Hasya Ghitha",
+            "weight": 5
          },
          {
             "name": "Haris Hidayat",
@@ -194,7 +223,7 @@
             "weight": 2
          }
       ],
-      "count": 9
+      "count": 13
    },
    {
       "name": "Computer Hardware Engineer",
@@ -214,8 +243,13 @@
          "UI Innovator",
          "Content Strategist"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Ramdan Syaripudin",
+            "weight": 6
+         }
+      ],
+      "count": 1
    },
    {
       "name": "UX Designer",
@@ -233,11 +267,15 @@
             "weight": 16
          },
          {
+            "name": "Ramdan Syaripudin",
+            "weight": 6
+         },
+         {
             "name": "Gunawan Busyaeri",
             "weight": 0
          }
       ],
-      "count": 2
+      "count": 3
    },
    {
       "name": "AI Engineer",
@@ -429,8 +467,52 @@
          {
             "name": "Rani Megasari",
             "weight": 0
+         },
+         {
+            "name": "Isman Rahmani",
+            "weight": 0
+         },
+         {
+            "name": "Muhamad Raihan Taqwa",
+            "weight": 0
+         },
+         {
+            "name": "Fahmi Salfiyari",
+            "weight": 0
+         },
+         {
+            "name": "Salma Hanifah",
+            "weight": 0
+         },
+         {
+            "name": "Cynthia Calista Jaya",
+            "weight": 0
+         },
+         {
+            "name": "Tasya Prillia Purnama",
+            "weight": 0
+         },
+         {
+            "name": "Purnama Muntaharridwan",
+            "weight": 0
+         },
+         {
+            "name": "Siti Sofia Hanum",
+            "weight": 0
+         },
+         {
+            "name": "Marisa K.",
+            "weight": 0
+         },
+         {
+            "name": "Hardian Ari Yoga Putra",
+            "weight": 0
+         },
+         {
+            "name": "Putri Nurwaqiah",
+            "weight": 0
          }
       ],
-      "count": 42
+      "count": 53
    }
 ]
