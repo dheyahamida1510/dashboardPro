@@ -113,8 +113,20 @@
             "weight": 51
          },
          {
+            "name": "Dina Dwi Handayani",
+            "weight": 32
+         },
+         {
+            "name": "Dian Lazuardi",
+            "weight": 32
+         },
+         {
             "name": "Reyhan Fikri Dzikriansyah",
             "weight": 31
+         },
+         {
+            "name": "Haris Hidayat",
+            "weight": 20
          },
          {
             "name": "Muhammad Rheza Alvarez Satriadipura",
@@ -123,9 +135,13 @@
          {
             "name": "Wahyu Tricahyo",
             "weight": 7
+         },
+         {
+            "name": "Reihan Manzis Syahputra",
+            "weight": 4
          }
       ],
-      "count": 4
+      "count": 8
    },
    {
       "name": "Web Developer",
@@ -142,19 +158,43 @@
       ],
       "people": [
          {
+            "name": "Rizki Nugraha",
+            "weight": 56
+         },
+         {
             "name": "Wiwi Juwita",
             "weight": 40
+         },
+         {
+            "name": "Rizal Purnomo",
+            "weight": 30
          },
          {
             "name": "Muhammad Nur Ilman",
             "weight": 18
          },
          {
+            "name": "Chandra Muhamad Apriana",
+            "weight": 18
+         },
+         {
+            "name": "Fathurrachman Damar Saputra",
+            "weight": 12
+         },
+         {
+            "name": "Reihan Manzis Syahputra",
+            "weight": 10
+         },
+         {
+            "name": "Haris Hidayat",
+            "weight": 4
+         },
+         {
             "name": "Muhammad Rheza Alvarez Satriadipura",
             "weight": 2
          }
       ],
-      "count": 3
+      "count": 9
    },
    {
       "name": "Computer Hardware Engineer",
@@ -345,8 +385,52 @@
          {
             "name": "Muhamad Habib Ibnu H.",
             "weight": 0
+         },
+         {
+            "name": "Anastasya Reskianissa",
+            "weight": 0
+         },
+         {
+            "name": "Fatih Izzul Haq",
+            "weight": 0
+         },
+         {
+            "name": "LUSI PEBRIANI",
+            "weight": 0
+         },
+         {
+            "name": "Febrinita Putri Sumiharto",
+            "weight": 0
+         },
+         {
+            "name": "Mega Cahya Pratiwi",
+            "weight": 0
+         },
+         {
+            "name": "Muhamad Gibran Mauludin",
+            "weight": 0
+         },
+         {
+            "name": "Rhena Indria Haryono",
+            "weight": 0
+         },
+         {
+            "name": "Mutiara Shafira Hikmanudin",
+            "weight": 0
+         },
+         {
+            "name": "K. Moh Lutfi Hamdani",
+            "weight": 0
+         },
+         {
+            "name": "Rizky Lukman Hakim",
+            "weight": 0
+         },
+         {
+            "name": "Rani Megasari",
+            "weight": 0
          }
       ],
-      "count": 31
+      "count": 42
    }
 ]

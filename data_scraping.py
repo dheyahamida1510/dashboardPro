@@ -86,7 +86,7 @@ sleep(randint(1, 3))
 link_list = []  # list untuk menampung link dari profile yang akan di-scrape
 
 i = 0   # hitungan jumlah data yang akan di-scrape
-limit = 15   # batasan jumlah data yang akan di-scrape
+limit = 20   # batasan jumlah data yang akan di-scrape
 #last_page_reached = False # kondisi jika telah mencapai halaman terakhir atau tidak
 
 while i < limit:
