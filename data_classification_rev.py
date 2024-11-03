@@ -117,7 +117,10 @@ with open("D:\\Dokumen\\dashboardPro\\career_data_temp.json", "r+") as cdf:
     
     for c in career_data:
         if c["people"]:
-            c["people"].sort(key= lambda x:x["weight"], reverse=True)
+            if c["name"] == "Other":
+                c["people"].sort(key= lambda x:x["name"].lower())
+            else:
+                c["people"].sort(key= lambda x:x["weight"], reverse=True)
     
     json_data = json.dumps(career_data, indent=3)
 

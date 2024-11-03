@@ -1,5 +1,16 @@
 [
    {
+      "name": "AI Engineer",
+      "career": [
+         "AI Engineer",
+         "Artificial Intelligence Engineer",
+         "Machine Learning Engineer",
+         "Machine Learning Engineering"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
       "name": "Big Data Engineer",
       "career": [
          "Big Data Engineer",
@@ -12,12 +23,17 @@
       "count": 0
    },
    {
-      "name": "Data Scientist",
+      "name": "Cloud Architect",
       "career": [
-         "Data Scientist",
-         "Data Analytics Analyst",
-         "Data Analytics Specialist",
-         "Data Science"
+         "Cloud Architect"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Computer Hardware Engineer",
+      "career": [
+         "Computer Hardware Engineer"
       ],
       "people": [],
       "count": 0
@@ -41,41 +57,6 @@
       "count": 1
    },
    {
-      "name": "Database Developer",
-      "career": [
-         "Database Developer",
-         "Data Engineer",
-         "Database Engineer",
-         "Data Modeler",
-         "Database Programmer",
-         "Data Developer"
-      ],
-      "people": [
-         {
-            "name": "Muhammad Nurharianto",
-            "weight": 32
-         },
-         {
-            "name": "Misdan Wijaya",
-            "weight": 12
-         }
-      ],
-      "count": 2
-   },
-   {
-      "name": "Database Administrator",
-      "career": [
-         "Database Administrator",
-         "DBA",
-         "Database Manager",
-         "Data Administrator",
-         "Database Admin",
-         "Database DBA"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
       "name": "Data Architect",
       "career": [
          "Data Architect",
@@ -94,6 +75,104 @@
       "count": 1
    },
    {
+      "name": "Data Engineer",
+      "career": [
+         "Data Engineer",
+         "Data Administrator",
+         "Data Modeler",
+         "Data Developer"
+      ],
+      "people": [
+         {
+            "name": "Muhammad Nurharianto",
+            "weight": 19
+         },
+         {
+            "name": "Misdan Wijaya",
+            "weight": 12
+         }
+      ],
+      "count": 2
+   },
+   {
+      "name": "Data Scientist",
+      "career": [
+         "Data Scientist",
+         "Data Analytics Analyst",
+         "Data Analytics Specialist"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Database Administrator",
+      "career": [
+         "Database Administrator",
+         "DBA",
+         "Database Manager",
+         "Data Administrator",
+         "Database Admin",
+         "Database DBA"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Database Developer",
+      "career": [
+         "Database Developer",
+         "Database Engineer",
+         "Database Programmer",
+         "Database Management Developer"
+      ],
+      "people": [
+         {
+            "name": "Muhammad Nurharianto",
+            "weight": 13
+         },
+         {
+            "name": "Haris Hidayat",
+            "weight": 13
+         }
+      ],
+      "count": 2
+   },
+   {
+      "name": "Graphic Designer",
+      "career": [
+         "Graphic Designer",
+         "3D Modeler",
+         "3D Developer"
+      ],
+      "people": [
+         {
+            "name": "Anastasya Reskianissa",
+            "weight": 58
+         },
+         {
+            "name": "Muhammad Nadzir Azhar",
+            "weight": 24
+         },
+         {
+            "name": "Masyita I.",
+            "weight": 23
+         },
+         {
+            "name": "Muhammad Rheza Alvarez Satriadipura",
+            "weight": 3
+         },
+         {
+            "name": "Rizal Purnomo",
+            "weight": 3
+         },
+         {
+            "name": "Gunawan Busyaeri",
+            "weight": 0
+         }
+      ],
+      "count": 6
+   },
+   {
       "name": "Information Security Analyst",
       "career": [
          "Information Security Analyst",
@@ -107,6 +186,31 @@
       "count": 0
    },
    {
+      "name": "Programmer",
+      "career": [
+         "Programmer"
+      ],
+      "people": [
+         {
+            "name": "Fahmi Salfiyari",
+            "weight": 12
+         },
+         {
+            "name": "Misdan Wijaya",
+            "weight": 12
+         },
+         {
+            "name": "Muhamad Habib Ibnu H.",
+            "weight": 3
+         },
+         {
+            "name": "Reyhan Fikri Dzikriansyah",
+            "weight": 2
+         }
+      ],
+      "count": 4
+   },
+   {
       "name": "Software Engineer",
       "career": [
          "Software Engineer",
@@ -114,7 +218,9 @@
          "Application Developer",
          "Application Engineer",
          "Programmer Analyst",
-         "Software Development Engineer"
+         "Software Development Engineer",
+         "Mobile Developer",
+         "IT Developer"
       ],
       "people": [
          {
@@ -134,8 +240,16 @@
             "weight": 31
          },
          {
+            "name": "Anastasya Reskianissa",
+            "weight": 23
+         },
+         {
             "name": "Haris Hidayat",
             "weight": 20
+         },
+         {
+            "name": "Ramdan Syaripudin",
+            "weight": 18
          },
          {
             "name": "Muhammad Rheza Alvarez Satriadipura",
@@ -146,92 +260,23 @@
             "weight": 7
          },
          {
+            "name": "Irfan Muhammad Faisal",
+            "weight": 5
+         },
+         {
             "name": "Reihan Manzis Syahputra",
             "weight": 4
          },
          {
             "name": "Misdan Wijaya",
             "weight": 3
-         }
-      ],
-      "count": 9
-   },
-   {
-      "name": "Web Developer",
-      "career": [
-         "Web Developer",
-         "Front End Developer",
-         "Front End Web Developer",
-         "Frontend Developer",
-         "Web Designer",
-         "Web Application Developer",
-         "Front End Engineer",
-         "Website Designer",
-         "Website Developer"
-      ],
-      "people": [
-         {
-            "name": "Rizki Nugraha",
-            "weight": 56
-         },
-         {
-            "name": "Jaka Septiadi",
-            "weight": 44
-         },
-         {
-            "name": "Wiwi Juwita",
-            "weight": 40
          },
          {
             "name": "Rizal Purnomo",
-            "weight": 30
-         },
-         {
-            "name": "Deffin Achmaddifa",
-            "weight": 23
-         },
-         {
-            "name": "Muhammad Nur Ilman",
-            "weight": 18
-         },
-         {
-            "name": "Chandra Muhamad Apriana",
-            "weight": 18
-         },
-         {
-            "name": "Fathurrachman Damar Saputra",
-            "weight": 12
-         },
-         {
-            "name": "Misdan Wijaya",
-            "weight": 12
-         },
-         {
-            "name": "Reihan Manzis Syahputra",
-            "weight": 10
-         },
-         {
-            "name": "Hasya Ghitha",
-            "weight": 5
-         },
-         {
-            "name": "Haris Hidayat",
-            "weight": 4
-         },
-         {
-            "name": "Muhammad Rheza Alvarez Satriadipura",
-            "weight": 2
+            "weight": 1
          }
       ],
       "count": 13
-   },
-   {
-      "name": "Computer Hardware Engineer",
-      "career": [
-         "Computer Hardware Engineer"
-      ],
-      "people": [],
-      "count": 0
    },
    {
       "name": "UI Designer",
@@ -241,15 +286,24 @@
          "Visual Designer",
          "UI Strategist",
          "UI Innovator",
-         "Content Strategist"
+         "Content Strategist",
+         "UI/UX Designer"
       ],
       "people": [
          {
+            "name": "Masyita I.",
+            "weight": 16
+         },
+         {
             "name": "Ramdan Syaripudin",
-            "weight": 6
+            "weight": 12
+         },
+         {
+            "name": "Gunawan Busyaeri",
+            "weight": 0
          }
       ],
-      "count": 1
+      "count": 3
    },
    {
       "name": "UX Designer",
@@ -259,7 +313,8 @@
          "UX Researcher",
          "UX Architect",
          "Interaction Designer",
-         "Experience Designer"
+         "Experience Designer",
+         "UI/UX Designer"
       ],
       "people": [
          {
@@ -278,122 +333,107 @@
       "count": 3
    },
    {
-      "name": "AI Engineer",
+      "name": "Web Developer",
       "career": [
-         "AI Engineer",
-         "Artificial Intelligence Engineer",
-         "Machine Learning Engineer",
-         "Machine Learning Engineering"
+         "Web Developer",
+         "Front End Developer",
+         "Front End Web Developer",
+         "Frontend Developer",
+         "Web Designer",
+         "Web Application Developer",
+         "Front End Engineer",
+         "Frontend Engineer",
+         "Website Designer",
+         "Website Developer",
+         "Back End Developer",
+         "Backend Developer",
+         "Web Programmer",
+         "Full Stack Engineer",
+         "Full-Stack Engineer",
+         "Full-Stack Developer"
       ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Cloud Architect",
-      "career": [
-         "Cloud Architect"
+      "people": [
+         {
+            "name": "Wiwi Juwita",
+            "weight": 79
+         },
+         {
+            "name": "Dian Lazuardi",
+            "weight": 70
+         },
+         {
+            "name": "Rizki Nugraha",
+            "weight": 70
+         },
+         {
+            "name": "Rizal Purnomo",
+            "weight": 59
+         },
+         {
+            "name": "Wahyu Tricahyo",
+            "weight": 51
+         },
+         {
+            "name": "Jaka Septiadi",
+            "weight": 44
+         },
+         {
+            "name": "Chandra Muhamad Apriana",
+            "weight": 39
+         },
+         {
+            "name": "Fathurrachman Damar Saputra",
+            "weight": 38
+         },
+         {
+            "name": "Misdan Wijaya",
+            "weight": 36
+         },
+         {
+            "name": "Deffin Achmaddifa",
+            "weight": 23
+         },
+         {
+            "name": "Reyhan Fikri Dzikriansyah",
+            "weight": 20
+         },
+         {
+            "name": "Reihan Manzis Syahputra",
+            "weight": 20
+         },
+         {
+            "name": "Muhammad Nur Ilman",
+            "weight": 18
+         },
+         {
+            "name": "Haris Hidayat",
+            "weight": 12
+         },
+         {
+            "name": "Fahmi Salfiyari",
+            "weight": 12
+         },
+         {
+            "name": "Dina Dwi Handayani",
+            "weight": 6
+         },
+         {
+            "name": "Hasya Ghitha",
+            "weight": 5
+         },
+         {
+            "name": "Muhammad Rheza Alvarez Satriadipura",
+            "weight": 2
+         }
       ],
-      "people": [],
-      "count": 0
+      "count": 18
    },
    {
       "name": "Other",
       "career": [],
       "people": [
          {
-            "name": "Vina Anggraeni",
-            "weight": 0
-         },
-         {
-            "name": "Fatin Fauziyyah Tiras Putri",
-            "weight": 0
-         },
-         {
-            "name": "Davina Cherryl Aurelia",
-            "weight": 0
-         },
-         {
-            "name": "Sifa Marcella Fardhani",
-            "weight": 0
-         },
-         {
-            "name": "Muhammad Nadzir Azhar",
-            "weight": 0
-         },
-         {
-            "name": "Mahyati -",
-            "weight": 0
-         },
-         {
-            "name": "Hanif Syafrian Purnama",
-            "weight": 0
-         },
-         {
-            "name": "Gina Istiqomah",
-            "weight": 0
-         },
-         {
-            "name": "Salsabila Fitri Pratami",
-            "weight": 0
-         },
-         {
-            "name": "Muhammad Kautsar",
-            "weight": 0
-         },
-         {
-            "name": "Denisya Nurul Azizah",
-            "weight": 0
-         },
-         {
-            "name": "Syifa Kudiarto",
-            "weight": 0
-         },
-         {
-            "name": "Hardiansah Faisal Rito",
-            "weight": 0
-         },
-         {
-            "name": "Rita Haryati",
-            "weight": 0
-         },
-         {
             "name": "Agung Hari Pramono",
-            "weight": 0
-         },
-         {
-            "name": "Dieke Husna Kamilla",
-            "weight": 0
-         },
-         {
-            "name": "Cinta Delvianne",
-            "weight": 0
-         },
-         {
-            "name": "Khusnul Dwi Nurfalah",
-            "weight": 0
-         },
-         {
-            "name": "Irfan Muhammad Faisal",
-            "weight": 0
-         },
-         {
-            "name": "Arvian Triantoro",
-            "weight": 0
-         },
-         {
-            "name": "Dimas Handi",
-            "weight": 0
-         },
-         {
-            "name": "uga nugraha syafari",
-            "weight": 0
-         },
-         {
-            "name": "Nadissa Qirshani Rahman",
-            "weight": 0
-         },
-         {
-            "name": "Irmadel Aurelliana",
             "weight": 0
          },
          {
@@ -401,15 +441,31 @@
             "weight": 0
          },
          {
-            "name": "Karina Permata",
+            "name": "Arvian Triantoro",
             "weight": 0
          },
          {
-            "name": "Fauzi Nur",
+            "name": "Cinta Delvianne",
             "weight": 0
          },
          {
-            "name": "Neng Nurhasanah",
+            "name": "Cynthia Calista Jaya",
+            "weight": 0
+         },
+         {
+            "name": "Davina Cherryl Aurelia",
+            "weight": 0
+         },
+         {
+            "name": "Denisya Nurul Azizah",
+            "weight": 0
+         },
+         {
+            "name": "Dieke Husna Kamilla",
+            "weight": 0
+         },
+         {
+            "name": "Dimas Handi",
             "weight": 0
          },
          {
@@ -417,19 +473,55 @@
             "weight": 0
          },
          {
-            "name": "Shafira Widihardjo",
-            "weight": 0
-         },
-         {
-            "name": "Muhamad Habib Ibnu H.",
-            "weight": 0
-         },
-         {
-            "name": "Anastasya Reskianissa",
-            "weight": 0
-         },
-         {
             "name": "Fatih Izzul Haq",
+            "weight": 0
+         },
+         {
+            "name": "Fatin Fauziyyah Tiras Putri",
+            "weight": 0
+         },
+         {
+            "name": "Fauzi Nur",
+            "weight": 0
+         },
+         {
+            "name": "Febrinita Putri Sumiharto",
+            "weight": 0
+         },
+         {
+            "name": "Gina Istiqomah",
+            "weight": 0
+         },
+         {
+            "name": "Hanif Syafrian Purnama",
+            "weight": 0
+         },
+         {
+            "name": "Hardian Ari Yoga Putra",
+            "weight": 0
+         },
+         {
+            "name": "Hardiansah Faisal Rito",
+            "weight": 0
+         },
+         {
+            "name": "Irmadel Aurelliana",
+            "weight": 0
+         },
+         {
+            "name": "Isman Rahmani",
+            "weight": 0
+         },
+         {
+            "name": "K. Moh Lutfi Hamdani",
+            "weight": 0
+         },
+         {
+            "name": "Karina Permata",
+            "weight": 0
+         },
+         {
+            "name": "Khusnul Dwi Nurfalah",
             "weight": 0
          },
          {
@@ -437,7 +529,11 @@
             "weight": 0
          },
          {
-            "name": "Febrinita Putri Sumiharto",
+            "name": "Mahyati -",
+            "weight": 0
+         },
+         {
+            "name": "Marisa K.",
             "weight": 0
          },
          {
@@ -449,7 +545,11 @@
             "weight": 0
          },
          {
-            "name": "Rhena Indria Haryono",
+            "name": "Muhamad Raihan Taqwa",
+            "weight": 0
+         },
+         {
+            "name": "Muhammad Kautsar",
             "weight": 0
          },
          {
@@ -457,39 +557,11 @@
             "weight": 0
          },
          {
-            "name": "K. Moh Lutfi Hamdani",
+            "name": "Nadissa Qirshani Rahman",
             "weight": 0
          },
          {
-            "name": "Rizky Lukman Hakim",
-            "weight": 0
-         },
-         {
-            "name": "Rani Megasari",
-            "weight": 0
-         },
-         {
-            "name": "Isman Rahmani",
-            "weight": 0
-         },
-         {
-            "name": "Muhamad Raihan Taqwa",
-            "weight": 0
-         },
-         {
-            "name": "Fahmi Salfiyari",
-            "weight": 0
-         },
-         {
-            "name": "Salma Hanifah",
-            "weight": 0
-         },
-         {
-            "name": "Cynthia Calista Jaya",
-            "weight": 0
-         },
-         {
-            "name": "Tasya Prillia Purnama",
+            "name": "Neng Nurhasanah",
             "weight": 0
          },
          {
@@ -497,22 +569,62 @@
             "weight": 0
          },
          {
+            "name": "Putri Nurwaqiah",
+            "weight": 0
+         },
+         {
+            "name": "Rani Megasari",
+            "weight": 0
+         },
+         {
+            "name": "Rhena Indria Haryono",
+            "weight": 0
+         },
+         {
+            "name": "Rita Haryati",
+            "weight": 0
+         },
+         {
+            "name": "Rizky Lukman Hakim",
+            "weight": 0
+         },
+         {
+            "name": "Salma Hanifah",
+            "weight": 0
+         },
+         {
+            "name": "Salsabila Fitri Pratami",
+            "weight": 0
+         },
+         {
+            "name": "Shafira Widihardjo",
+            "weight": 0
+         },
+         {
+            "name": "Sifa Marcella Fardhani",
+            "weight": 0
+         },
+         {
             "name": "Siti Sofia Hanum",
             "weight": 0
          },
          {
-            "name": "Marisa K.",
+            "name": "Syifa Kudiarto",
             "weight": 0
          },
          {
-            "name": "Hardian Ari Yoga Putra",
+            "name": "Tasya Prillia Purnama",
             "weight": 0
          },
          {
-            "name": "Putri Nurwaqiah",
+            "name": "uga nugraha syafari",
+            "weight": 0
+         },
+         {
+            "name": "Vina Anggraeni",
             "weight": 0
          }
       ],
-      "count": 53
+      "count": 48
    }
 ]

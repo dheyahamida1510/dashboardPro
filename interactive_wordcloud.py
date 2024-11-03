@@ -11,17 +11,30 @@ def create_wordcloud():
     data_list = []
 
     # Mengisi list data_list dengan data dari database career
+    #"""
+    for c in data:
+        if c["count"] != 0:
+            people = []
+            for p in c["people"]:
+                people.append(p["name"])
+            worddata = [c["name"], c["count"], c["name"]+" ("+str(c["count"])+")", people]
+            data_list.append(worddata)
+    
+    """
+    # test : tanpa "Other"
     for c in data:
         people = []
-        for p in c["people"]:
-            people.append(p["name"])
-        worddata = [c["name"], c["count"], c["name"]+" ("+str(c["count"])+")", people]
-        data_list.append(worddata)
+        if c["name"] != "Other":
+            for p in c["people"]:
+                people.append(p["name"])
+            worddata = [c["name"], c["count"], c["name"]+" ("+str(c["count"])+")", people]
+            data_list.append(worddata)
+    #"""
 
     # Melakukan perhitungan untuk mengatur ukuran font frasa saaat ditampilkan pada word cloud
     # menentukan ukuran max dan min dari frasa
-    size_max = 50
-    size_min = 0
+    size_max = 75
+    size_min = 10
 
     # menentukan value max dari frekuensi frasa (data ke-2 dari setiap list pada data_list)
     value_max = max(data_list, key= lambda x:x[1])[1]
