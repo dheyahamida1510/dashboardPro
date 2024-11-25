@@ -1,0 +1,215 @@
+[
+   {
+      "name": "AI Engineer",
+      "career": [
+         "AI Engineer",
+         "Artificial Intelligence Engineer",
+         "Machine Learning Engineer",
+         "Machine Learning Engineering"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Big Data Engineer",
+      "career": [
+         "Big Data Engineer",
+         "Big Data Architect",
+         "Big Data Developer",
+         "Big Data Analyst",
+         "Big Data Administrator"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Cloud Architect",
+      "career": [
+         "Cloud Architect"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Computer Hardware Engineer",
+      "career": [
+         "Computer Hardware Engineer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Data Analyst",
+      "career": [
+         "Data Analyst",
+         "Data Specialist",
+         "Business Data Analyst",
+         "Data Consultant",
+         "Data Technician",
+         "Data Abstractor"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Data Architect",
+      "career": [
+         "Data Architect",
+         "Information Architect",
+         "Database Architect",
+         "Business Intelligence Architect",
+         "BI Architect",
+         "Data Warehouse Architect"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Data Engineer",
+      "career": [
+         "Data Engineer",
+         "Data Administrator",
+         "Data Modeler",
+         "Data Developer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Data Scientist",
+      "career": [
+         "Data Scientist",
+         "Data Analytics Analyst",
+         "Data Analytics Specialist"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Database Administrator",
+      "career": [
+         "Database Administrator",
+         "DBA",
+         "Database Manager",
+         "Data Administrator",
+         "Database Admin",
+         "Database DBA"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Database Developer",
+      "career": [
+         "Database Developer",
+         "Database Engineer",
+         "Database Programmer",
+         "Database Management Developer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Graphic Designer",
+      "career": [
+         "Graphic Designer",
+         "3D Modeler",
+         "3D Developer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Information Security Analyst",
+      "career": [
+         "Information Security Analyst",
+         "Security Analyst",
+         "IT Security Analyst",
+         "Cyber Security Analyst",
+         "Information Security Specialist",
+         "Cyber Security Specialist"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Programmer",
+      "career": [
+         "Programmer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Software Engineer",
+      "career": [
+         "Software Engineer",
+         "Software Developer",
+         "Application Developer",
+         "Application Engineer",
+         "Programmer Analyst",
+         "Software Development Engineer",
+         "Mobile Developer",
+         "IT Developer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "UI Designer",
+      "career": [
+         "UI Designer",
+         "User Interface Designer",
+         "Visual Designer",
+         "UI Strategist",
+         "UI Innovator",
+         "Content Strategist",
+         "UI/UX Designer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "UX Designer",
+      "career": [
+         "UX Designer",
+         "User Experience Designer",
+         "UX Researcher",
+         "UX Architect",
+         "Interaction Designer",
+         "Experience Designer",
+         "UI/UX Designer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Web Developer",
+      "career": [
+         "Web Developer",
+         "Front End Developer",
+         "Front End Web Developer",
+         "Frontend Developer",
+         "Web Designer",
+         "Web Application Developer",
+         "Front End Engineer",
+         "Frontend Engineer",
+         "Website Designer",
+         "Website Developer",
+         "Back End Developer",
+         "Backend Developer",
+         "Web Programmer",
+         "Full Stack Engineer",
+         "Full-Stack Engineer",
+         "Full-Stack Developer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Other",
+      "career": [],
+      "people": [],
+      "count": 0
+   }
+]

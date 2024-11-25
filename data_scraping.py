@@ -6,16 +6,15 @@ from bs4 import BeautifulSoup
 from time import sleep
 import json
 from random import randint
-import re
 from datetime import datetime
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# untuk password akun LinkedIn
+# Mendapatkan password akun LinkedIn
 with open("D:\\Dokumen\\account.txt") as f:
     acc = f.readline()
 
-# membuat instance webdriver
+# Membuat instance webdriver
 # headless Chrome browser
 # (web driver didownload di : https://googlechromelabs.github.io/chrome-for-testing/#stable )
 options = webdriver.ChromeOptions()
@@ -28,8 +27,7 @@ service = Service("D:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"
 driver = webdriver.Chrome(service=service, options=options)
 
 # membuka halaman login LinkedIn
-driver.get("https://linkedin.com/uas/login")
- 
+driver.get("https://linkedin.com/uas/login") 
 # tunggu loading halaman
 sleep(randint(4, 5))
 
@@ -40,13 +38,16 @@ username = driver.find_element(By.ID, "username")
 username.send_keys("dheyahamida@upi.edu")  
  
 # Mengisi password
+# cari field untuk mengisi password
 password = driver.find_element(By.ID, "password")
+# mengisi password
 password.send_keys(acc)
  
-# Format XPATH ---> //tagname[@attribute='value']
+# Cari dan tekan tombol login
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
 # tunggu loading halaman
 w = 0
+# iterasi untuk mengulang percobaan untuk loading halaman home
 while w < 3:
     WebDriverWait(driver, 60).until(EC.visibility_of_element_located((By.ID, "global-nav")))
     w += 1
@@ -60,6 +61,7 @@ driver.get("https://www.linkedin.com/in/ikatan-alumni-universitas-pendidikan-ind
 WebDriverWait(driver, 30).until(EC.visibility_of_all_elements_located((By.XPATH, "//a[@class='ember-view']")))
 
 sleep(randint(3, 4))
+# parse halaman web
 source = driver.page_source
 soup = BeautifulSoup(source, "html.parser")
 
@@ -73,6 +75,8 @@ for b in buttons:
         connections_button = b
 
 connections_button.click()
+
+# Menunggu sampai seluruh list alumni ter-load
 WebDriverWait(driver, 30).until(EC.visibility_of_all_elements_located((By.XPATH, "//*[@class='mb1']")))
 sleep(randint(1, 3))
 
@@ -118,7 +122,7 @@ while i < limit:
             l1 = p.find("span", class_="entity-result__title-text t-16")
             link = l1.find("a", class_="app-aware-link").get("href")
 
-            # memasukkan nama dan link dalam list
+            # memasukkan data nama, work, dan link dalam list
             data = {"name" : name, "work" : work, "link" : link}
             profiles.append(data)
 
@@ -244,19 +248,24 @@ if len(link_list) != 0:
 
                     # Jika data experience bukan uraian
                     if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
+                        
+                        # cari nama experience
                         n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
                         exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                        # cari lokasi experience
                         exp_loc = ""
                         if(exprn.find("span", class_="t-14 t-normal")):
                             l = exprn.find("span", class_="t-14 t-normal")
                             exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                        # cari waktu experience
                         exp_tm = ""
                         if(exprn.find("span", class_="t-14 t-normal t-black--light")):
                             t = exprn.find("span", class_="t-14 t-normal t-black--light")
                             exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                        # memasukkan data dalam list experience
                         exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
                         experience.append(exp_dict)
 
@@ -268,7 +277,7 @@ if len(link_list) != 0:
                     else:
                         if(exprn.find("span", class_="t-14 t-normal")):
 
-                            # Mencari lokasi bekerja
+                            # Mencari lokasi experience
                             exp_loc = ""
 
                             cpy = exprn.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
@@ -280,7 +289,7 @@ if len(link_list) != 0:
                                 job_and_time = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
                                 job_type = job_and_time.split("\u00b7")[0].strip()
 
-                            # lokasi bekerja + tipe pekerjaan
+                            # lokasi experience + tipe experience
                             if job_type:
                                 exp_loc = company + " \u00b7 " + job_type
                             else:
@@ -330,19 +339,24 @@ if len(link_list) != 0:
 
                                 # Jika data experience bukan uraian
                                 if(exprn.find("div", class_="display-flex align-items-center mr1 t-bold")):
+
+                                    # cari nama experience
                                     n = exprn.find("div", class_="display-flex align-items-center mr1 t-bold")
                                     exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                                    # cari lokasi experience
                                     exp_loc = ""
                                     if(exprn.find("span", class_="t-14 t-normal")):
                                         l = exprn.find("span", class_="t-14 t-normal")
                                         exp_loc = l.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                                    # cari waktu experience
                                     exp_tm = ""
                                     if(exprn.find("span", class_="t-14 t-normal t-black--light")):
                                         t = exprn.find("span", class_="t-14 t-normal t-black--light")
                                         exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                                    # memasukkan data dalam list experience
                                     exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
                                     experience.append(exp_dict)
 
@@ -353,20 +367,22 @@ if len(link_list) != 0:
                                 # Jika data experience adalah uraian
                                 else:
                                     if(exprn.find("a", attrs={"data-field" : "experience_company_logo"})):
-                                        # Mencari lokasi bekerja
+
+                                        # Mencari lokasi experience
                                         exp_loc = ""
 
                                         c = exprn.find("a", attrs={"data-field" : "experience_company_logo"})
                                         cpy = c.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
                                         company = cpy.find("span", attrs={"aria-hidden" : "true"}).text.strip()
 
+                                        # mencari tipe experience
                                         job_type = ""
                                         if(c.find("span", class_="t-14 t-normal")):
                                             tp = c.find("span", class_="t-14 t-normal")
                                             job_and_time = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
                                             job_type = job_and_time.split("\u00b7")[0].strip()
 
-                                        # lokasi bekerja + tipe pekerjaan
+                                        # lokasi experience + tipe experience
                                         if job_type:
                                             exp_loc = company + " \u00b7 " + job_type
                                         else:
@@ -395,31 +411,41 @@ if len(link_list) != 0:
                                                     exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
                                                     experience.append(exp_dict)    
 
+            # Mendapatkan waktu terkini
             current_time = datetime.now()
             time_string = str(current_time)
 
+            # Menyusun setiap data yang telah didapatkan dalam sebuah dictionary
             profile_dict = {
-                "name" : name,
-                "work" : work,
-                "location" : loc,
-                "link" : link,
-                "experiences" : experience,
-                "modified" : time_string
+                "name" : name,  # nama user
+                "work" : work,  # status user
+                "location" : loc,   # lokasi user
+                "link" : link,  # link profile user
+                "experiences" : experience, # list pengalaman user
+                "modified" : time_string    # waktu data diupdate
             }
 
             # Memeriksa jika data dengan user yang sama sudah ada pada database
+            # jika database tidak kosong
             if len(people_data) != 0:
                 i = 0
-                match_found = False
+                match_found = False # variabel untuk memeriksa jika user sudah ada pada database
+                # iterasi untuk memeriksa jika user sudah ada pada database
                 while i < len(people_data):
+                    # jika user sudah ada
                     if profile_dict["name"] == people_data[i]["name"] or profile_dict["link"] == people_data[i]["link"]:
+                        # replace data lama dengan data baru (update data)
                         people_data[i] = profile_dict
-                        match_found = True
-                        i = len(people_data)
+                        match_found = True # user sudah ada = True
+                        i = len(people_data) # iterasi dihentikan
                     i += 1
+                # jika user belum ada
                 if match_found == False:
+                    # tambahkan data baru
                     people_data.append(profile_dict)
+            # jika database kosong
             else:
+                # tambahkan data baru
                 people_data.append(profile_dict)
 
 # Menuliskan database yang sudah terupdate pada file json database

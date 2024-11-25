@@ -52,7 +52,6 @@ def create_navbar():
                         dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
                         dbc.Col(
                             dbc.Collapse(
-                                menudrop,
                                 id="navbar-collapse",
                                 is_open=False,
                                 navbar=True

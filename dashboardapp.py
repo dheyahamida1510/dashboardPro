@@ -13,7 +13,7 @@ app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.theme
 navbar = create_navbar()
 
 # membuat word cloud
-wordcloud = create_wordcloud()
+wordcloud = html.Div(create_wordcloud(), id="wordcloud")
 
 content = html.Div(
     [
@@ -116,7 +116,9 @@ def show_navbar(n, is_open):
         return not is_open
     return is_open
 
-# update confirmation panel
+# UPDATE CONFIRMATION PANEL
+# Fungsi untuk membuka dan menutup confirmation panel
+# callback
 @app.callback(
     Output("confirmation-panel", "is_open"),
     [
@@ -126,37 +128,52 @@ def show_navbar(n, is_open):
     ],
     [State("confirmation-panel", "is_open")]
 )
+# fungsi
 def confirmation_panel(n_open, n_yes, n_no, is_open):
 
+    # menggunakan dash.callback_context untuk menentukan komponen yang akan men-trigger callback
     ctx = dash.callback_context
 
     if not ctx.triggered:
         return is_open
 
+    # mencari id dari komponen yang melakukan trigger pada callback
     trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
 
+    # jika id adalah id button update data (update-data)
     if trigger_id == "update-data":
+        # membuka confirmation panel
         return True
+    # jika id adalah button yes atau button no
     elif trigger_id in ["yes-update", "no-update"]:
+        # menutup confirmation panel
         return False
 
     return is_open
-
+# Fungsi untuk check konfirmasi update data
+# callback
 @app.callback(
-    Output("check-confirmation", "children"),
+    [
+        Output("check-confirmation", "children"),
+        Output("wordcloud", "children")
+    ],
     [Input("yes-update", "n_clicks")]
 )
+# fungsi
 def update_confirmation(n):
+    # jika tombol yes di-click
     if n > 0:
         isolated_variables = {}
+        """
         with open("D:\\Dokumen\\dashboardPro\\data_scraping.py", "r") as scp:
             code_script = scp.read()
             exec(code_script, isolated_variables, isolated_variables)
+        """
         with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py", "r") as scp:
             code_script = scp.read()
             exec(code_script, isolated_variables, isolated_variables)
-        return "Action!"
-    return ""
+        return "Action!", create_wordcloud()
+    return "", create_wordcloud()
 
 # view list people
 @app.callback(

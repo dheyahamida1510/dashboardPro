@@ -1,341 +1,91 @@
 [
    {
-      "name": "AI Engineer",
+      "name": "Data Management System",
       "career": [
-         "AI Engineer",
-         "Artificial Intelligence Engineer",
-         "Machine Learning Engineer",
-         "Machine Learning Engineering"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Big Data Engineer",
-      "career": [
-         "Big Data Engineer",
-         "Big Data Architect",
-         "Big Data Developer",
-         "Big Data Analyst",
-         "Big Data Administrator"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Cloud Architect",
-      "career": [
-         "Cloud Architect"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Computer Hardware Engineer",
-      "career": [
-         "Computer Hardware Engineer"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Data Analyst",
-      "career": [
-         "Data Analyst",
-         "Data Specialist",
-         "Business Data Analyst",
-         "Data Consultant",
-         "Data Technician",
-         "Data Abstractor"
-      ],
-      "people": [
-         {
-            "name": "Muhammad Nurharianto",
-            "weight": 6
-         }
-      ],
-      "count": 1
-   },
-   {
-      "name": "Data Architect",
-      "career": [
+         "Chief of Knowledge Officer",
+         "Data Warehouse Director",
+         "Data Warehouse Manager",
+         "Data Scientist",
+         "Data Engineer",
+         "Data Model Administrator",
          "Data Architect",
-         "Information Architect",
-         "Database Architect",
-         "Business Intelligence Architect",
-         "BI Architect",
-         "Data Warehouse Architect"
+         "Database Administrator",
+         "Data Quality Engineer",
+         "Business Intelligence Analyst",
+         "Specialist Annotator",
+         "Data Analyst",
+         "Data Management Supervisor",
+         "Data Entry Supervisor",
+         "Data Entry Coordinator",
+         "Data Management Staff",
+         "Data Entry Operator",
+         "Annotator/Labeller",
+         "Data Entry Clerk"
       ],
       "people": [
          {
             "name": "Misdan Wijaya",
-            "weight": 22
-         }
-      ],
-      "count": 1
-   },
-   {
-      "name": "Data Engineer",
-      "career": [
-         "Data Engineer",
-         "Data Administrator",
-         "Data Modeler",
-         "Data Developer"
-      ],
-      "people": [
-         {
-            "name": "Muhammad Nurharianto",
-            "weight": 19
+            "weight": 34
          },
          {
-            "name": "Misdan Wijaya",
-            "weight": 12
+            "name": "Muhammad Nurharianto",
+            "weight": 25
          }
       ],
       "count": 2
    },
    {
-      "name": "Data Scientist",
+      "name": "Programming and Software Development",
       "career": [
-         "Data Scientist",
-         "Data Analytics Analyst",
-         "Data Analytics Specialist"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Database Administrator",
-      "career": [
-         "Database Administrator",
-         "DBA",
-         "Database Manager",
-         "Data Administrator",
-         "Database Admin",
-         "Database DBA"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Database Developer",
-      "career": [
+         "Business Applications Director",
+         "Systems and Programming Director",
+         "System/Application Development Manager",
+         "System and Programmer Manager",
+         "System Development Team Head",
+         "Application Development Manager",
+         "Implementation Project Manager",
+         "Software Development Expert",
+         "Site Software/Device Services Manager",
+         "Software Engineering Manager",
+         "Applications Manager",
+         "Application Technology Manager",
+         "Systems Software Manager",
+         "Systems and Programming Manager",
+         "Office Automation Applications Manager",
+         "Application Programming Manager",
+         "Program Analyst",
+         "Object Programmer",
+         "Database Programmer",
+         "Web Developer",
+         "Software Engineer",
+         "Lead Application Programmer",
+         "Senior Application Programmer",
+         "Unix Programmer Senior",
+         "Business Analyst",
+         "Business Service Analyst",
+         "Database Programmer Supervisor",
+         "Programmer",
+         "Junior Web Programmer",
+         "Systems Programmer",
+         "Junior Mobile Programmer",
+         "Software Quality Control Tester",
+         "Software Technician",
+         "Programmer Assistant",
+         "Assistant Documenter",
+         "Interface Programmer Assistant",
+         "Coder",
+         "Program Documenter",
+         "Assistant Programmer Trainee",
+         "Coder Trainee",
+         "Junior Assistant Programmer",
+         "Software Development Clerk",
+         "Software Developer",
          "Database Developer",
          "Database Engineer",
-         "Database Programmer",
-         "Database Management Developer"
-      ],
-      "people": [
-         {
-            "name": "Muhammad Nurharianto",
-            "weight": 13
-         },
-         {
-            "name": "Haris Hidayat",
-            "weight": 13
-         }
-      ],
-      "count": 2
-   },
-   {
-      "name": "Graphic Designer",
-      "career": [
-         "Graphic Designer",
-         "3D Modeler",
-         "3D Developer"
-      ],
-      "people": [
-         {
-            "name": "Anastasya Reskianissa",
-            "weight": 58
-         },
-         {
-            "name": "Muhammad Nadzir Azhar",
-            "weight": 24
-         },
-         {
-            "name": "Masyita I.",
-            "weight": 23
-         },
-         {
-            "name": "Muhammad Rheza Alvarez Satriadipura",
-            "weight": 3
-         },
-         {
-            "name": "Rizal Purnomo",
-            "weight": 3
-         },
-         {
-            "name": "Gunawan Busyaeri",
-            "weight": 0
-         }
-      ],
-      "count": 6
-   },
-   {
-      "name": "Information Security Analyst",
-      "career": [
-         "Information Security Analyst",
-         "Security Analyst",
-         "IT Security Analyst",
-         "Cyber Security Analyst",
-         "Information Security Specialist",
-         "Cyber Security Specialist"
-      ],
-      "people": [],
-      "count": 0
-   },
-   {
-      "name": "Programmer",
-      "career": [
-         "Programmer"
-      ],
-      "people": [
-         {
-            "name": "Fahmi Salfiyari",
-            "weight": 12
-         },
-         {
-            "name": "Misdan Wijaya",
-            "weight": 12
-         },
-         {
-            "name": "Muhamad Habib Ibnu H.",
-            "weight": 3
-         },
-         {
-            "name": "Reyhan Fikri Dzikriansyah",
-            "weight": 2
-         }
-      ],
-      "count": 4
-   },
-   {
-      "name": "Software Engineer",
-      "career": [
-         "Software Engineer",
-         "Software Developer",
-         "Application Developer",
-         "Application Engineer",
-         "Programmer Analyst",
-         "Software Development Engineer",
+         "Web Programmer",
+         "Application Programmer",
+         "Unix Programmer",
          "Mobile Developer",
-         "IT Developer"
-      ],
-      "people": [
-         {
-            "name": "Hadian Mutakin",
-            "weight": 51
-         },
-         {
-            "name": "Dina Dwi Handayani",
-            "weight": 32
-         },
-         {
-            "name": "Dian Lazuardi",
-            "weight": 32
-         },
-         {
-            "name": "Reyhan Fikri Dzikriansyah",
-            "weight": 31
-         },
-         {
-            "name": "Anastasya Reskianissa",
-            "weight": 23
-         },
-         {
-            "name": "Haris Hidayat",
-            "weight": 20
-         },
-         {
-            "name": "Ramdan Syaripudin",
-            "weight": 18
-         },
-         {
-            "name": "Muhammad Rheza Alvarez Satriadipura",
-            "weight": 10
-         },
-         {
-            "name": "Wahyu Tricahyo",
-            "weight": 7
-         },
-         {
-            "name": "Irfan Muhammad Faisal",
-            "weight": 5
-         },
-         {
-            "name": "Reihan Manzis Syahputra",
-            "weight": 4
-         },
-         {
-            "name": "Misdan Wijaya",
-            "weight": 3
-         },
-         {
-            "name": "Rizal Purnomo",
-            "weight": 1
-         }
-      ],
-      "count": 13
-   },
-   {
-      "name": "UI Designer",
-      "career": [
-         "UI Designer",
-         "User Interface Designer",
-         "Visual Designer",
-         "UI Strategist",
-         "UI Innovator",
-         "Content Strategist",
-         "UI/UX Designer"
-      ],
-      "people": [
-         {
-            "name": "Masyita I.",
-            "weight": 16
-         },
-         {
-            "name": "Ramdan Syaripudin",
-            "weight": 12
-         },
-         {
-            "name": "Gunawan Busyaeri",
-            "weight": 0
-         }
-      ],
-      "count": 3
-   },
-   {
-      "name": "UX Designer",
-      "career": [
-         "UX Designer",
-         "User Experience Designer",
-         "UX Researcher",
-         "UX Architect",
-         "Interaction Designer",
-         "Experience Designer",
-         "UI/UX Designer"
-      ],
-      "people": [
-         {
-            "name": "Masyita I.",
-            "weight": 16
-         },
-         {
-            "name": "Ramdan Syaripudin",
-            "weight": 6
-         },
-         {
-            "name": "Gunawan Busyaeri",
-            "weight": 0
-         }
-      ],
-      "count": 3
-   },
-   {
-      "name": "Web Developer",
-      "career": [
-         "Web Developer",
          "Front End Developer",
          "Front End Web Developer",
          "Frontend Developer",
@@ -347,19 +97,24 @@
          "Website Developer",
          "Back End Developer",
          "Backend Developer",
-         "Web Programmer",
          "Full Stack Engineer",
          "Full-Stack Engineer",
-         "Full-Stack Developer"
+         "Fullstack Engineer",
+         "Full Stack Developer",
+         "Full-Stack Developer",
+         "Fullstack Developer",
+         "UI/UX Designer",
+         "UI Designer",
+         "UX Designer"
       ],
       "people": [
          {
-            "name": "Wiwi Juwita",
-            "weight": 79
+            "name": "Dian Lazuardi",
+            "weight": 102
          },
          {
-            "name": "Dian Lazuardi",
-            "weight": 70
+            "name": "Wiwi Juwita",
+            "weight": 79
          },
          {
             "name": "Rizki Nugraha",
@@ -371,6 +126,18 @@
          },
          {
             "name": "Wahyu Tricahyo",
+            "weight": 58
+         },
+         {
+            "name": "Reyhan Fikri Dzikriansyah",
+            "weight": 53
+         },
+         {
+            "name": "Hadian Mutakin",
+            "weight": 51
+         },
+         {
+            "name": "Misdan Wijaya",
             "weight": 51
          },
          {
@@ -382,31 +149,51 @@
             "weight": 39
          },
          {
+            "name": "Dina Dwi Handayani",
+            "weight": 38
+         },
+         {
             "name": "Fathurrachman Damar Saputra",
             "weight": 38
          },
          {
-            "name": "Misdan Wijaya",
-            "weight": 36
+            "name": "Haris Hidayat",
+            "weight": 32
+         },
+         {
+            "name": "Ramdan Syaripudin",
+            "weight": 30
+         },
+         {
+            "name": "Hasya Ghitha",
+            "weight": 30
+         },
+         {
+            "name": "Reihan Manzis Syahputra",
+            "weight": 24
+         },
+         {
+            "name": "Anastasya Reskianissa",
+            "weight": 23
          },
          {
             "name": "Deffin Achmaddifa",
             "weight": 23
          },
          {
-            "name": "Reyhan Fikri Dzikriansyah",
-            "weight": 20
-         },
-         {
-            "name": "Reihan Manzis Syahputra",
-            "weight": 20
-         },
-         {
             "name": "Muhammad Nur Ilman",
             "weight": 18
          },
          {
-            "name": "Haris Hidayat",
+            "name": "Masyita I.",
+            "weight": 16
+         },
+         {
+            "name": "Muhammad Nurharianto",
+            "weight": 13
+         },
+         {
+            "name": "Muhammad Rheza Alvarez Satriadipura",
             "weight": 12
          },
          {
@@ -414,19 +201,571 @@
             "weight": 12
          },
          {
-            "name": "Dina Dwi Handayani",
-            "weight": 6
-         },
-         {
-            "name": "Hasya Ghitha",
+            "name": "Irfan Muhammad Faisal",
             "weight": 5
          },
          {
-            "name": "Muhammad Rheza Alvarez Satriadipura",
+            "name": "Muhamad Habib Ibnu H.",
+            "weight": 3
+         },
+         {
+            "name": "Gunawan Busyaeri",
+            "weight": 0
+         }
+      ],
+      "count": 26
+   },
+   {
+      "name": "Hardware and Digital Peripherals",
+      "career": [
+         "Technology Director",
+         "Digital Computer Technology Scientist",
+         "Digital Computer Technology Expert",
+         "Computer Operation Managers",
+         "Microcomputer Technology Manager",
+         "Controller Manager",
+         "Computer Operation Manager",
+         "Metrics Manager",
+         "Digital Computer Technology Advisor",
+         "Network Control Analyst",
+         "Network Security Analyst",
+         "LAN Applications Support Analyst",
+         "Microcomputer Support Supervisor",
+         "Computer Maintenance Supervisor",
+         "Hardware Installation Coordinator",
+         "Communications Administrator",
+         "POS Hardware Coordinator",
+         "Computer Maintenance Coordinator",
+         "Network Specialist",
+         "Voice Communications Specialist",
+         "Computer Maintenance Staff",
+         "Network Control Analyst Assistant",
+         "BYOD Support Specialist",
+         "Personal Computer Specialist",
+         "Computer Maintenance Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Network and Infrastructure",
+      "career": [
+         "IT Infrastructure Director",
+         "Telecommunication Services Director",
+         "Network Services Director",
+         "Technical Services Vice President",
+         "Network Manager",
+         "Cloud Computing Expert",
+         "Network and Infrastructure Expert",
+         "Cloud Applications Manager",
+         "Data Communications Manager",
+         "Manager Network and Computing Services",
+         "Network Services Manager",
+         "Wireless Systems Manager",
+         "Voice and Data Communications Manager",
+         "Telecommunications Manager",
+         "Voice/Wireless Communications Manager",
+         "Telephone and Wireless Services Manager",
+         "Voice Communications Manager",
+         "Network Engineer",
+         "System Engineer",
+         "Network Administrator",
+         "System Administrator",
+         "Network Designer",
+         "Intermediate Network Administrator",
+         "Computer Network Intermediate Technician",
+         "Data Communications Assistant Manager",
+         "Cloud Computer Analyst",
+         "Network Services Administrator",
+         "Network Services Supervisor",
+         "Wireless Coordinator",
+         "Voice Communications Coordinator",
+         "Voice Wireless Communications Coordinator",
+         "Network Technician",
+         "Telecommunications Technician",
+         "Technical Support",
+         "Network Support Technician",
+         "Technical Support Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Operation and System Tools",
+      "career": [
+         "Chief Operation Officer",
+         "Operation and Technology Director",
+         "Computer Operations Manager",
+         "Operation System Engineer",
+         "Operating Systems Production Manager",
+         "IT Operations Support Manager",
+         "IT Outsourcing Manager",
+         "Accounting Information System Manager",
+         "Store Information System Manager",
+         "Transaction Processing Manager",
+         "Administration and Facilities Manager",
+         "Technical Operations Manager",
+         "Desktop/Computer Support Manager",
+         "Help Desk Manager",
+         "Operation System Development Expert",
+         "Metrics Measurement Analyst",
+         "Senior Production Control Analyst",
+         "Computer Technician Supervisor",
+         "Word Processing Supervisor",
+         "Computer Operations Supervisor",
+         "Help Desk Supervisor",
+         "Computer Technician Specialist",
+         "Junior Computer Technician",
+         "Desktop/Computer Support Coordinator",
+         "Help Desk Coordinator",
+         "Technical Services Specialist",
+         "Technical Specialist",
+         "Computer Operations Specialist",
+         "Desktop/Computer Support Specialist",
+         "Help Desk Office",
+         "Intermediate Computer Operator",
+         "Quality Assurance Computer Operator",
+         "Quantity Surveyor Computer Operator",
+         "Statistical Data Processing Computer Operator",
+         "Advance Office Operator",
+         "Help Desk Specialist",
+         "Desktop Specialist",
+         "Word Processing Lead Operator",
+         "Computer Repair Technician",
+         "Desktop Technician",
+         "Senior Office Operator",
+         "Helpdesk",
+         "Word Processing Operator",
+         "Computer Operator",
+         "Junior Office Operator",
+         "Basic Office Operator",
+         "Computer Technician Clerk",
+         "Computer Operator Assistant",
+         "Print Operator"
+      ],
+      "people": [
+         {
+            "name": "Arvian Triantoro",
+            "weight": 13
+         }
+      ],
+      "count": 1
+   },
+   {
+      "name": "Information System and Technology Development",
+      "career": [
+         "Chief Technology Officer",
+         "Information System Director",
+         "Vice President Information Services",
+         "Information Architecture Manager",
+         "Business Development Manager",
+         "Availability/Automated Operations Manager",
+         "Production Support Manager",
+         "Property Management Manager",
+         "Information Systems Manager",
+         "IT Planning Analyst",
+         "Information Systems Generalist",
+         "Information Technology Associate",
+         "System Analyst",
+         "PCI-DSS Administrator",
+         "Procurement Administrator",
+         "Information Systems Supervisor",
+         "Information Management Supervisor",
+         "Supervisor POS",
+         "Supervisor POS Training",
+         "Production Services Supervisor",
+         "Record Management Coordinator",
+         "Green IT Management Coordinator",
+         "Information Management Coordinator",
+         "Information Management Staff",
+         "Information System and Technology Administrator",
+         "Information Management Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Governance and Management",
+      "career": [
+         "Chief Information Officer",
+         "Chief Technology Officer",
+         "Information Technology Director",
+         "Vice President Human Resources",
+         "It Deployment Director",
+         "It Planning Director",
+         "Disaster Recovery Manager",
+         "Disaster Recovery And Business Continuity Manager",
+         "Training and Documentation Manager",
+         "Re-Engineering Manager",
+         "It Human Resources Manager",
+         "Information Center Manager",
+         "Contract Management Administrator",
+         "Key Performance Indicator Analyst",
+         "Operations Analyst",
+         "Planning Integration and Control Administrator",
+         "Production Control Analyst",
+         "Change Control Analyst",
+         "Change Control Supervisor",
+         "Capacity Planning Supervisor",
+         "Human Resources Generalist",
+         "IT Management Coordinator",
+         "TH GL Specialist",
+         "Senior TH GL Specialist",
+         "Human Resources Specialist",
+         "It Management Staff",
+         "It Governance And Management Administrator",
+         "It Management Clerk"
+      ],
+      "people": [
+         {
+            "name": "Febrinita Putri Sumiharto",
+            "weight": 5
+         }
+      ],
+      "count": 1
+   },
+   {
+      "name": "IT Project Management",
+      "career": [
+         "Chief It Projects Officer",
+         "Program Management Director",
+         "IT Project Portfolio Director",
+         "ICT Project Manager",
+         "Point Of Sale Manager",
+         "IT Contracts Manager",
+         "Senior Project Manager",
+         "Lead Project Manager",
+         "Project Manager Applications",
+         "Project Manager Distributed Systems",
+         "Project Manager Enterprise Architecture",
+         "Project Manager - Implementation Deployment",
+         "Project Manager Network Technical Services",
+         "Systems Project Manager",
+         "IT Training Project Manager",
+         "Customer Account Manager",
+         "ICTPM Deputy Manager",
+         "Deputy Manager ICT Project Management",
+         "IT Maintenance Contract Administrator",
+         "IT Project Supervisor",
+         "IT Project Coordinator",
+         "IT Project Management Staff",
+         "IT Project Management Administrator",
+         "IT Project Clerk",
+         "IT Project Manager"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Enterprise Architecture",
+      "career": [
+         "Chief Enterprise Architecture",
+         "Vice President Strategy And Architecture",
+         "Software Architecture Manager",
+         "Enterprise Architecture Manager",
+         "Competitive Intelligence Manager",
+         "Enterprise Architect",
+         "Enterprise Resource Management Business Analyst",
+         "Competitive Intelligence Analyst",
+         "Desktop BYOD Support Supervisor",
+         "Disaster Recovery/Special Projects Supervisor",
+         "Application Architecture Mapper",
+         "IT Enterprise Design Coordinator",
+         "IT Architecture Staff",
+         "IT Enterprise Architecture Administrator",
+         "IT Enterprise Management Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Security and Compliance",
+      "career": [
+         "Chief Cyber Security Officer",
+         "Chief Compliance Officer",
+         "Chief Security Officer (CSO)",
+         "Safety And Security Program Director",
+         "Sarbanes-Oxley Compliance Director",
+         "Systems Director",
+         "Information Security Director",
+         "Network Security Auditor",
+         "Network Security Manager",
+         "Information Technology Audit Manager",
+         "Cyber Security Manager",
+         "IT Quality Assurance",
+         "Information Technology Expert Auditor",
+         "Data Security Manager",
+         "IT Quality Control Manager",
+         "Security And Workstations Manager",
+         "IT Standard Implementation Manager",
+         "Safety And Security Program Manager",
+         "Change Control Manager",
+         "Sarbanes-Oxley Compliance Manager",
+         "Quality Assurance Manager",
+         "Information Security Manager",
+         "Advance Network Security Engineer",
+         "Cyber Security Engineer",
+         "Junior Network Security Engineer",
+         "Cyber Security Analyst",
+         "IT Auditor",
+         "IT Quality Measurement Analyst",
+         "Cyber Security Junior",
+         "Data Security Administrator",
+         "Information Security Administrator",
+         "Safety And Security Program Supervisor",
+         "Information Security Supervisor",
+         "IT Security Management Supervisor",
+         "Software Quality Assurance Tester",
+         "IT Security Management Coordinator",
+         "Quality Assurance Specialist",
+         "Information System Specialist",
+         "Cyber Security Specialist",
+         "IT Security Management Staff",
+         "IT Security Management Administrator",
+         "IT Security Management Clerk",
+         "Network Security Engineer"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Services Management System",
+      "career": [
+         "Chief IT Services Officer",
+         "Vice President Consulting Services",
+         "Production Services/Data Center Director",
+         "Disaster Recovery And Business Continuity Director",
+         "Technical Services Director",
+         "ITSM Manager",
+         "IT Service Management Expert",
+         "Customer Service Center Manager",
+         "Customer Site Support Manager",
+         "User Support Manager",
+         "Technical Services Manager",
+         "Service Level Reporting Manager",
+         "Accounting For Information Technology Manager",
+         "Planning and Integration Services Manager",
+         "Personal Computing And Office Automation Support Manager",
+         "Site/Shift Operations Manager",
+         "BYOD Support Manager",
+         "IT Production Services Manager",
+         "Computer Operations Shift Manager",
+         "Computer Operations Assistant Manager",
+         "Accounting Information System Analyst",
+         "Help Desk Analyst",
+         "ITSM Supervisor",
+         "Information Librarian",
+         "IT Executive Secretary",
+         "IT Account Representative",
+         "Computer Operations Shift Supervisor",
+         "Customer Service Supervisor",
+         "Computer Operations Assistant Supervisor",
+         "Help Desk Technician",
+         "Operations Training Coordinator",
+         "POS Coordinator",
+         "POS Senior Coordinator",
+         "Customer Service and Support Coordinator",
+         "Disaster Recovery Coordinator",
+         "IT Production Control Specialist",
+         "Systems Support Specialist",
+         "IT Procurement Coordinator",
+         "IT Procurement Assistant",
+         "IT Assistant Controller",
+         "IT Service Management Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT and Computing Facilities Management",
+      "career": [
+         "Chief IT Facilities Officer",
+         "Electronic Commerce Director",
+         "IT Management and Control Director",
+         "Data Center Manager",
+         "Facility and Equipment Support Manager",
+         "Vendor Management Manager",
+         "Telecommunications Installation And Maintenance Manager",
+         "Site Management Manager",
+         "Green IT Management Manager",
+         "Output Processing Manager",
+         "IT Facilities Management and Data Center Expert",
+         "Intermediate Data Center Technician",
+         "Data Center Facility Administrator",
+         "Computer Service Technician",
+         "Junior Data Center Technician",
+         "Data Center Supervisor",
+         "Junior Computer Technician",
+         "IT Facilities Management Coordinator",
+         "Green IT Management Coordinator",
+         "Data Center Operations Staff",
+         "Data Center technical Support Junior",
+         "IT Administrative Assistant",
+         "IT Facilities Management Administrator",
+         "IT Facilities Management Clerk",
+         "Data Center Technician",
+         "Computer Technician"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Multimedia",
+      "career": [
+         "Chief Multimedia Officer",
+         "Multimedia Product Editor",
+         "Senior Graphic Designer",
+         "Director Media Communications",
+         "Multimedia Director",
+         "Graphic Designer Expert",
+         "Media Library Support Manager",
+         "Multimedia Specialist",
+         "Video Editor",
+         "Intermediate Graphic Designer",
+         "Advance Animator",
+         "Advance Multimedia Designer",
+         "Junior Graphic Designer",
+         "Multimedia Specialist Effect",
+         "Audio Visual Supervisor",
+         "Media Librarian",
+         "Tape Librarian",
+         "Intermediate Multimedia Designer",
+         "Intermediate Animator",
+         "Forms And Graphics Designer",
+         "Audio Visual Technician",
+         "Junior Digital Artist",
+         "Digital Imaging",
+         "Audiovisual Technician",
+         "Junior Multimedia Designer",
+         "Junior Animator",
+         "Multimedia Management Clerk",
+         "Graphic Designer",
+         "Animator",
+         "Multimedia Designer",
+         "Digital Artist",
+         "Photo Editor"
+      ],
+      "people": [
+         {
+            "name": "Anastasya Reskianissa",
+            "weight": 58
+         },
+         {
+            "name": "Masyita I.",
+            "weight": 23
+         },
+         {
+            "name": "Purnama Muntaharridwan",
+            "weight": 12
+         },
+         {
+            "name": "Muhammad Nadzir Azhar",
+            "weight": 6
+         },
+         {
+            "name": "Fathurrachman Damar Saputra",
+            "weight": 5
+         },
+         {
+            "name": "Mega Cahya Pratiwi",
+            "weight": 3
+         },
+         {
+            "name": "Rizal Purnomo",
+            "weight": 3
+         },
+         {
+            "name": "Gunawan Busyaeri",
+            "weight": 0
+         }
+      ],
+      "count": 8
+   },
+   {
+      "name": "IT Mobility and Internet of Things",
+      "career": [
+         "Chief Mobility Officer",
+         "Mobile And IoT Director",
+         "Cloud Computing Architect",
+         "Senior Mobile Computing",
+         "Cloud Computing Engineer",
+         "Cloud Computing Security",
+         "Internet - Intranet Activities Manager",
+         "Internet Systems Manager",
+         "Web Content Manager",
+         "Manager Video And Website Content",
+         "Cloud Computing Developer",
+         "Advance Mobile Computing",
+         "Webmaster",
+         "Web Analyst",
+         "On-Line Transaction Processing Analyst",
+         "Web Administrator",
+         "Internet/Intranet Administrator",
+         "Junior Mobile Computing",
+         "Internet Developer",
+         "Website Designer",
+         "Mobile Computing Senior",
+         "E-Commerce Specialist",
+         "Mobile Computing Junior",
+         "IoT Operator",
+         "Mobile Programming Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "Integration Application System",
+      "career": [
+         "Chief System Officer",
+         "Application System Director",
+         "ERP Specialist",
+         "Project Manager Enterprise Resource Planning (ERP)",
+         "ERP Analyst",
+         "Enterprise Resource Planning Security Analyst",
+         "Enterprise Resource Management Subject Matter Expert",
+         "Enterprise Resource Planning Data Architect",
+         "Enterprise Resource Planning (ERP) Infrastructure Administrator",
+         "Lead Enterprise Resource Planning (ERP) Functional",
+         "Enterprise Resource Management (ERP) Decision Support Analyst",
+         "Enterprise Resource Planning Master Data Analyst",
+         "Enterprise Resource Planning Architect",
+         "Enterprise Resource Planning (ERP) Trainer",
+         "Enterprise Resource Planning (ERP) - Developer",
+         "Enterprise Resource Planning Process Owner",
+         "Lead Enterprise Resource Planning Team",
+         "Lead Enterprise Resource Planning Technical",
+         "Application Management Supervisor",
+         "Application Management Coordinator",
+         "Application Management Staff",
+         "Application Management Clerk",
+         "System Integration Clerk"
+      ],
+      "people": [],
+      "count": 0
+   },
+   {
+      "name": "IT Consultancy and Advisory",
+      "career": [
+         "Principal IT Advisor",
+         "Senior IT Advisor",
+         "Senior IT Consultant",
+         "Digital Entrepreneur Manager",
+         "IT Consultant",
+         "Digital Entrepreneur Deputy Manager",
+         "Digital Entrepreneur Supervisor",
+         "IT Consultancy Supervisor",
+         "IT Consultancy Coordinator",
+         "IT Consultancy Staff",
+         "IT Administrator",
+         "IT Consultancy Clerk"
+      ],
+      "people": [
+         {
+            "name": "Haris Hidayat",
             "weight": 2
          }
       ],
-      "count": 18
+      "count": 1
    },
    {
       "name": "Other",
@@ -438,10 +777,6 @@
          },
          {
             "name": "arief (rahman) Ibrahim",
-            "weight": 0
-         },
-         {
-            "name": "Arvian Triantoro",
             "weight": 0
          },
          {
@@ -482,10 +817,6 @@
          },
          {
             "name": "Fauzi Nur",
-            "weight": 0
-         },
-         {
-            "name": "Febrinita Putri Sumiharto",
             "weight": 0
          },
          {
@@ -537,10 +868,6 @@
             "weight": 0
          },
          {
-            "name": "Mega Cahya Pratiwi",
-            "weight": 0
-         },
-         {
             "name": "Muhamad Gibran Mauludin",
             "weight": 0
          },
@@ -562,10 +889,6 @@
          },
          {
             "name": "Neng Nurhasanah",
-            "weight": 0
-         },
-         {
-            "name": "Purnama Muntaharridwan",
             "weight": 0
          },
          {
@@ -625,6 +948,6 @@
             "weight": 0
          }
       ],
-      "count": 48
+      "count": 44
    }
 ]
