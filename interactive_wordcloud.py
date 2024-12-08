@@ -33,7 +33,7 @@ def create_wordcloud():
 
     # Melakukan perhitungan untuk mengatur ukuran font frasa saaat ditampilkan pada word cloud
     # menentukan ukuran max dan min dari frasa
-    size_max = 75
+    size_max = 50
     size_min = 10
 
     # menentukan value max dari frekuensi frasa (data ke-2 dari setiap list pada data_list)
@@ -55,12 +55,13 @@ def create_wordcloud():
         list=data_list,
         color="random-dark",
         backgroundColor="#ffffff",
-        width=1000, 
-        height=700,
+        width=900, 
+        height=600,
         gridSize=16,
         shuffle=True,
         rotateRatio=0.5,
         shrinkToFit=False,
+        drawOutOfBound=True,
         shape="circle",
         hover=True,
         id="cloud"

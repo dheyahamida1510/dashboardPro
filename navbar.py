@@ -2,6 +2,7 @@ from dash import html
 import dash_bootstrap_components as dbc
 from dash import html
 from dash_bootstrap_components._components.Container import Container
+from PIL import Image
 
 def create_navbar():
     menudrop = dbc.DropdownMenu(
@@ -33,6 +34,8 @@ def create_navbar():
         align="center"
     )
 
+    pil_image = Image.open("D:/Dokumen/dashboardPro/assets/logo_upi.png")
+
     # membuat navigation bar
     navbar = dbc.Navbar(
         dbc.Container(
@@ -40,7 +43,8 @@ def create_navbar():
                 html.A(
                     dbc.Row(
                         [
-                            dbc.Col(dbc.NavbarBrand("CS UPI Alumni Dashboard", className="ms-2"))
+                            dbc.Col(html.Img(src=pil_image, height="30px")),
+                            dbc.Col(dbc.NavbarBrand("Alumni Dashboard", className="ms-2"))
                         ],
                         align="center",
                         className="g-0"

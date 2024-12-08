@@ -37,6 +37,39 @@ def create_list(item):
 
     return data_list
 
+def profile_header(name):
+
+    with open("D:\\Dokumen\\dashboardPro\\people_data.json") as pd:
+        data = json.load(pd)
+
+    header = ""
+
+    for p in data:
+        if name == p["name"]:
+            header = html.Div(
+                [
+                    html.H3(name, className="mb-1 px-1 pb-1"),
+                    html.Div(
+                        [
+                            html.P(p["work"], className="mb-0"),
+                            html.Small(p["location"], className="text-muted"),
+                            html.P(
+                                [
+                                    html.Small(
+                                        [
+                                            html.A("Go to " + name + "'s " + "LinkedIn profile", href=p["link"], target="_blank")
+                                        ]
+                                    ),                            
+                                ]
+                            ),
+                        ],
+                        className="px-2"
+                    )
+                ]
+            )
+    
+    return header
+
 def profile_details(name):
 
     with open("D:\\Dokumen\\dashboardPro\\people_data.json") as pd:

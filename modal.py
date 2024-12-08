@@ -5,12 +5,12 @@ from dash import Input, Output, State, html
 
 #app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-def create_modal():
+def profile_modal():
     modal = html.Div(
         [
             dbc.Modal(
                 [
-                    dbc.ModalHeader(dbc.ModalTitle(id="modal-header")),
+                    dbc.ModalHeader(id="modal-header", className="border border-primary", style={"background": "#f3f3f3"}),
                     dbc.ModalBody(id="modal-body"),
                     dbc.ModalFooter(
                         dbc.Button(
@@ -18,7 +18,9 @@ def create_modal():
                             id="modal-close",
                             className="ms-auto",
                             n_clicks=0,
-                        )
+                        ),
+                        className="border border-primary",
+                        style={"background": "#f3f3f3"}
                     ),
                 ],
                 id="modal",
@@ -26,6 +28,118 @@ def create_modal():
                 scrollable=True,
                 is_open=False,
             ),
+        ]
+    )
+    return modal
+
+def confirmation_modal():
+    modal = html.Div(
+        [
+            dbc.Modal(
+                [
+                    dbc.ModalBody(
+                        [
+                            dbc.Row(
+                                [
+                                    dbc.Col(
+                                        html.Div(
+                                            "Are you sure want to update data?", 
+                                            className="mx-auto mb-2",
+                                            style={
+                                                "display": "flex",
+                                                "align-items": "center",
+                                                "justify-content": "center",
+                                            },                                                           
+                                        ),
+                                    ),
+                                ],
+                                className="pb-2",
+                            ),
+                            dbc.Row(
+                                [
+                                    dbc.Col(
+                                        html.Div(
+                                            [
+                                                dbc.Button(
+                                                    "No",
+                                                    id="no-update",
+                                                    className="col-6",
+                                                    n_clicks=0,
+                                                    color="dark",
+                                                    outline=True,
+                                                ),
+                                            ],
+                                            style={
+                                                "display": "flex",
+                                                "align-items": "center",
+                                                "justify-content": "center",
+                                            }                                                            
+                                        ),
+                                    ),
+                                    dbc.Col(
+                                        html.Div(
+                                            [
+                                                dbc.Button(
+                                                    "Yes",
+                                                    id="yes-update",
+                                                    className="col-6",
+                                                    n_clicks=0,
+                                                    color="primary",
+                                                ),
+                                            ],
+                                            style={
+                                                "display": "flex",
+                                                "align-items": "center",
+                                                "justify-content": "center",
+                                            }
+                                        ),
+                                    ),                                                                                                
+                                ],
+                                className="py-2",
+                            ),
+                        ],
+                    ),
+                ],
+                id="confirmation-panel",
+                centered=True,
+                is_open=False
+            )
+        ]
+    )
+    return modal
+
+def loading_modal():
+    modal = html.Div(
+        [
+            dbc.Modal(
+                [
+                    dbc.ModalBody(
+                        [
+                            dbc.Row(
+                                [
+                                    dbc.Col(
+                                        html.Div(
+                                            "Updating Data...", 
+                                            className="mx-auto mb-2",
+                                            style={
+                                                "display": "flex",
+                                                "align-items": "center",
+                                                "justify-content": "center",
+                                            },
+                                        )
+                                    )
+                                ],
+                                className="pb-2"
+                            )
+                        ]
+                    )
+                ],
+                id="loading-modal",
+                centered=True,
+                is_open=False,
+                keyboard=False,
+                backdrop="static"
+            )
         ]
     )
     return modal
