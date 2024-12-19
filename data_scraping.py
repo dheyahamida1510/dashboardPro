@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 from time import sleep
+import re
 import json
 from random import randint
 from datetime import datetime
@@ -36,13 +37,16 @@ sleep(randint(4, 5))
 username = driver.find_element(By.ID, "username")
 # mengisi alamat email
 username.send_keys("dheyahamida@upi.edu")  
- 
+
+sleep(1) 
 # Mengisi password
 # cari field untuk mengisi password
 password = driver.find_element(By.ID, "password")
 # mengisi password
 password.send_keys(acc)
- 
+
+sleep(randint(1, 2))
+
 # Cari dan tekan tombol login
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
 # tunggu loading halaman
@@ -90,7 +94,7 @@ sleep(randint(1, 3))
 link_list = []  # list untuk menampung link dari profile yang akan di-scrape
 
 i = 0   # hitungan jumlah data yang akan di-scrape
-limit = 20   # batasan jumlah data yang akan di-scrape
+limit = 10   # batasan jumlah data yang akan di-scrape
 #last_page_reached = False # kondisi jika telah mencapai halaman terakhir atau tidak
 
 while i < limit:
@@ -115,12 +119,12 @@ while i < limit:
 
             # mendapatkan keterangan/status karir user (work)
             work = ""
-            if(p.find("div", class_="entity-result__primary-subtitle t-14 t-black t-normal")):
-                work = p.find("div", class_="entity-result__primary-subtitle t-14 t-black t-normal").text.strip()
+            if(p.find("div", class_=re.compile("t-14 t-black t-normal"))):
+                work = p.find("div", class_=re.compile("t-14 t-black t-normal")).text.strip()
 
             # mendapatkan link profile
-            l1 = p.find("span", class_="entity-result__title-text t-16")
-            link = l1.find("a", class_="app-aware-link").get("href")
+            l1 = p.find("span", class_=re.compile("t-16"))
+            link = l1.find("a", attrs={"href" : re.compile(r"www\.linkedin\.com/")}).get("href")
 
             # memasukkan data nama, work, dan link dalam list
             data = {"name" : name, "work" : work, "link" : link}
@@ -209,7 +213,7 @@ if len(link_list) != 0:
             # check code
             # print(intro)
 
-            name = intro.find("h1", class_="text-heading-xlarge inline t-24 v-align-middle break-words").text.strip()
+            name = intro.find("h1", class_=re.compile("inline t-24 v-align-middle break-words")).text.strip()
             work = intro.find("div", class_="text-body-medium break-words").text.strip()
             loc = intro.find("span", class_="text-body-small inline t-black--light break-words").text.strip()
 
@@ -241,7 +245,8 @@ if len(link_list) != 0:
                 soup = BeautifulSoup(experien, "html.parser")
 
                 # Ekstraksi data experience
-                exp = soup.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
+                exp_card = soup.find("main", attrs={"aria-label" : "Experience"})
+                exp = exp_card.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
 
                 for e in exp:
                     exprn = e.find("div", class_="display-flex flex-row justify-space-between")
@@ -261,9 +266,11 @@ if len(link_list) != 0:
 
                         # cari waktu experience
                         exp_tm = ""
-                        if(exprn.find("span", class_="t-14 t-normal t-black--light")):
-                            t = exprn.find("span", class_="t-14 t-normal t-black--light")
-                            exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                        if(exprn.find_all("span", class_="t-14 t-normal t-black--light")):
+                            grey_text = exprn.find_all("span", class_="t-14 t-normal t-black--light")
+                            for t in grey_text:
+                                if(t.find("span", class_="pvs-entity__caption-wrapper")):
+                                    exp_tm = t.find("span", class_="pvs-entity__caption-wrapper").text.strip()
 
                         # memasukkan data dalam list experience
                         exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
@@ -275,48 +282,55 @@ if len(link_list) != 0:
 
                     # Jika data experience adalah uraian
                     else:
-                        if(exprn.find("span", class_="t-14 t-normal")):
+                        if(e.find("div", class_=re.compile("pvs-entity__sub-components"))):
 
                             # Mencari lokasi experience
-                            exp_loc = ""
+                            exp_loc = ""                                                                
 
+                            # Mendapatkan nama perusahaan / tempat bekerja
                             cpy = exprn.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
                             company = cpy.find("span", attrs={"aria-hidden" : "true"}).text.strip()
-
+                            
                             job_type = ""
                             if(exprn.find("span", class_="t-14 t-normal")):
                                 tp = exprn.find("span", class_="t-14 t-normal")
                                 job_and_time = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
-                                job_type = job_and_time.split("\u00b7")[0].strip()
+                                if re.search("\u00b7", job_and_time):
+                                    job_type = job_and_time.split("\u00b7")[0].strip()
 
                             # lokasi experience + tipe experience
                             if job_type:
                                 exp_loc = company + " \u00b7 " + job_type
                             else:
-                                exp_loc = company
+                                exp_loc = company                        
 
                             # Menampung container experience
-                            if(e.find("div", class_="pvs-list__container")):
-                                exp_container = e.find("div", class_="pvs-list__container")
-                                extd_exp = exp_container.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
+                            exp_container = e.find("div", class_=re.compile("pvs-entity__sub-components"))
+                            extd_exp = exp_container.find_all("div", attrs={"data-view-name" : "profile-component-entity"})
 
-                                for ep in extd_exp:
+                            for ep in extd_exp:
 
-                                    data_container = ep.find("div", class_="display-flex flex-row justify-space-between")
+                                data_container = ep.find("div", class_="display-flex flex-row justify-space-between")
 
-                                    if(data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")):
-                                        n = data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
-                                        exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                if(data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")):
+                                    n = data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
+                                    exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()                                   
 
-                                        exp_tm = ""
-                                        if(data_container.find_all("span", class_="t-14 t-normal t-black--light")):
-                                            grey_text = data_container.find_all("span", class_="t-14 t-normal t-black--light")
-                                            for t in grey_text:
-                                                if(t.find("span", class_="pvs-entity__caption-wrapper")):
-                                                    exp_tm = t.find("span", class_="pvs-entity__caption-wrapper").text.strip()
+                                    if not job_type:
+                                        if(data_container.find("span", class_="t-14 t-normal")):
+                                            tp = data_container.find("span", class_="t-14 t-normal")
+                                            j_type = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                            exp_loc = company + " \u00b7 " + j_type
 
-                                        exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
-                                        experience.append(exp_dict)
+                                    exp_tm = ""
+                                    if(data_container.find_all("span", class_="t-14 t-normal t-black--light")):
+                                        grey_text = data_container.find_all("span", class_="t-14 t-normal t-black--light")
+                                        for t in grey_text:
+                                            if(t.find("span", class_="pvs-entity__caption-wrapper")):
+                                                exp_tm = t.find("span", class_="pvs-entity__caption-wrapper").text.strip()
+
+                                    exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
+                                    experience.append(exp_dict)
                         
             # Jika tidak ada element "navigation-index-see-all-experiences"
             else:
@@ -352,9 +366,11 @@ if len(link_list) != 0:
 
                                     # cari waktu experience
                                     exp_tm = ""
-                                    if(exprn.find("span", class_="t-14 t-normal t-black--light")):
-                                        t = exprn.find("span", class_="t-14 t-normal t-black--light")
-                                        exp_tm = t.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                    if(exprn.find_all("span", class_="t-14 t-normal t-black--light")):
+                                        grey_text = exprn.find_all("span", class_="t-14 t-normal t-black--light")
+                                        for t in grey_text:
+                                            if(t.find("span", class_="pvs-entity__caption-wrapper")):
+                                                exp_tm = t.find("span", class_="pvs-entity__caption-wrapper").text.strip()
 
                                     # memasukkan data dalam list experience
                                     exp_dict = {"name" : exp_name, "location" : exp_loc, "time" : exp_tm}
@@ -380,7 +396,8 @@ if len(link_list) != 0:
                                         if(c.find("span", class_="t-14 t-normal")):
                                             tp = c.find("span", class_="t-14 t-normal")
                                             job_and_time = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
-                                            job_type = job_and_time.split("\u00b7")[0].strip()
+                                            if re.search("\u00b7", job_and_time):
+                                                job_type = job_and_time.split("\u00b7")[0].strip()
 
                                         # lokasi experience + tipe experience
                                         if job_type:
@@ -400,6 +417,12 @@ if len(link_list) != 0:
                                                 if(data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")):
                                                     n = data_container.find("div", class_="display-flex align-items-center mr1 hoverable-link-text t-bold")
                                                     exp_name = n.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+
+                                                    if not job_type:
+                                                        if(data_container.find("span", class_="t-14 t-normal")):
+                                                            tp = data_container.find("span", class_="t-14 t-normal")
+                                                            j_type = tp.find("span", attrs={"aria-hidden" : "true"}).text.strip()
+                                                            exp_loc = company + " \u00b7 " + j_type
 
                                                     exp_tm = ""
                                                     if(data_container.find_all("span", class_="t-14 t-normal t-black--light")):

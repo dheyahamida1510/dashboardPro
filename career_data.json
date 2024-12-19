@@ -121,6 +121,10 @@
             "weight": 70
          },
          {
+            "name": "Zenna Dwi Utama",
+            "weight": 69
+         },
+         {
             "name": "Rizal Purnomo",
             "weight": 59
          },
@@ -145,16 +149,20 @@
             "weight": 44
          },
          {
+            "name": "Dina Dwi Handayani",
+            "weight": 40
+         },
+         {
             "name": "Chandra Muhamad Apriana",
             "weight": 39
          },
          {
-            "name": "Dina Dwi Handayani",
+            "name": "Fathurrachman Damar Saputra",
             "weight": 38
          },
          {
-            "name": "Fathurrachman Damar Saputra",
-            "weight": 38
+            "name": "Ani Anisyah",
+            "weight": 36
          },
          {
             "name": "Haris Hidayat",
@@ -185,6 +193,10 @@
             "weight": 18
          },
          {
+            "name": "Fenny Feronika Maharani",
+            "weight": 18
+         },
+         {
             "name": "Masyita I.",
             "weight": 16
          },
@@ -211,9 +223,13 @@
          {
             "name": "Gunawan Busyaeri",
             "weight": 0
+         },
+         {
+            "name": "Muhamad Ilham Nuari",
+            "weight": 0
          }
       ],
-      "count": 26
+      "count": 30
    },
    {
       "name": "Hardware and Digital Peripherals",
@@ -381,8 +397,13 @@
          "Information System and Technology Administrator",
          "Information Management Clerk"
       ],
-      "people": [],
-      "count": 0
+      "people": [
+         {
+            "name": "Wirdatul Hayaty",
+            "weight": 4
+         }
+      ],
+      "count": 1
    },
    {
       "name": "IT Governance and Management",
@@ -780,6 +801,14 @@
             "weight": 0
          },
          {
+            "name": "Bunga Alodia Isfara",
+            "weight": 0
+         },
+         {
+            "name": "Catrine Salsabiila",
+            "weight": 0
+         },
+         {
             "name": "Cinta Delvianne",
             "weight": 0
          },
@@ -928,6 +957,10 @@
             "weight": 0
          },
          {
+            "name": "Siti Aisyah Ikrimawati",
+            "weight": 0
+         },
+         {
             "name": "Siti Sofia Hanum",
             "weight": 0
          },
@@ -948,6 +981,6 @@
             "weight": 0
          }
       ],
-      "count": 44
+      "count": 47
    }
 ]

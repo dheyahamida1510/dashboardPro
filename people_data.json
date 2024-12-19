@@ -227,7 +227,7 @@
    },
    {
       "name": "Gina Istiqomah",
-      "work": "EFL Teacher",
+      "work": "English Tutor",
       "location": "Bandung, West Java, Indonesia",
       "link": "https://www.linkedin.com/in/gina-istiqomah-45395a1b0/",
       "experiences": [
@@ -238,31 +238,16 @@
          },
          {
             "name": "English Teacher",
-            "location": "SMK Prakarya Internasional \u00b7 Part-time",
-            "time": "Mar 2021 - Jun 2023 \u00b7 2 yrs 4 mos"
+            "location": "SMK Prakarya Internasional \u00b7 Full-time",
+            "time": "Mar 2021 - Jul 2023 \u00b7 2 yrs 5 mos"
          },
          {
-            "name": "English Teacher",
-            "location": "EF Education First \u00b7 Contract",
-            "time": "Nov 2020 - Mar 2021 \u00b7 5 mos"
-         },
-         {
-            "name": "English Teacher",
-            "location": "Rumah Belajar Solution \u00b7 Contract",
-            "time": "Feb 2020 - Dec 2020 \u00b7 11 mos"
-         },
-         {
-            "name": "English Teaching Assistant",
+            "name": "English Tutor",
             "location": "kumon indonesia \u00b7 Part-time",
-            "time": "Nov 2019 - Dec 2019 \u00b7 2 mos"
-         },
-         {
-            "name": "Tour Guide",
-            "location": "Museum of the Asian-African Conference  \u00b7 Apprenticeship",
-            "time": "Feb 2019 - May 2019 \u00b7 4 mos"
+            "time": "Oct 2019 - Dec 2019 \u00b7 3 mos"
          }
       ],
-      "modified": "2024-10-18 18:04:53.050430"
+      "modified": "2024-12-19 15:21:54.089416"
    },
    {
       "name": "Salsabila Fitri Pratami",
@@ -522,7 +507,7 @@
    },
    {
       "name": "Dieke Husna Kamilla",
-      "work": "customer care, and public relationship enthusiast",
+      "work": "customer care, public relationship, banker enthusiast",
       "location": "Bandung, West Java, Indonesia",
       "link": "https://www.linkedin.com/in/diekehusnakamilla/",
       "experiences": [
@@ -547,7 +532,7 @@
             "time": "Dec 2017 - Dec 2019 \u00b7 2 yrs 1 mo"
          }
       ],
-      "modified": "2024-10-22 19:39:06.393100"
+      "modified": "2024-12-19 15:41:43.347901"
    },
    {
       "name": "Cinta Delvianne",
@@ -585,14 +570,14 @@
    },
    {
       "name": "Khusnul Dwi Nurfalah",
-      "work": "Bachelor of Administration Education at Universitas Pendidikan Indonesia",
+      "work": "Management Development Program | Bachelor of Administration Education at Universitas Pendidikan Indonesia",
       "location": "Bandung, West Java, Indonesia",
       "link": "https://www.linkedin.com/in/khusnul-dwi-nurfalah/",
       "experiences": [
          {
             "name": "Management Development Program",
             "location": "PT K-24 INDONESIA OFFICIAL \u00b7 Full-time",
-            "time": "Sep 2024 - Present \u00b7 2 mos"
+            "time": "Sep 2024 - Present \u00b7 4 mos"
          },
          {
             "name": "Tim Verifikator Penyedia Alat Masak Listrik (AML) 2023",
@@ -605,7 +590,7 @@
             "time": "Sep 2022 - Dec 2022 \u00b7 4 mos"
          }
       ],
-      "modified": "2024-10-22 19:39:23.715721"
+      "modified": "2024-12-19 15:41:18.599477"
    },
    {
       "name": "Irfan Muhammad Faisal",
@@ -1408,14 +1393,14 @@
    },
    {
       "name": "Dina Dwi Handayani",
-      "work": "Sr. PHP Software Engineer",
+      "work": "Team Lead | Business Intelligence | Software Engineer | PHP",
       "location": "Bandung, West Java, Indonesia",
       "link": "https://www.linkedin.com/in/dinadhandayani/",
       "experiences": [
          {
             "name": "Senior Software Engineer",
             "location": "PT Levart Teknologi Indonesia \u00b7 Full-time",
-            "time": "Jul 2023 - Present \u00b7 1 yr 4 mos"
+            "time": "Jul 2023 - Present \u00b7 1 yr 6 mos"
          },
          {
             "name": "Junior Software Engineer",
@@ -1448,7 +1433,7 @@
             "time": "Aug 2016 - Dec 2016 \u00b7 5 mos"
          }
       ],
-      "modified": "2024-10-25 09:46:17.642810"
+      "modified": "2024-12-19 15:42:17.578832"
    },
    {
       "name": "Muhamad Gibran Mauludin",
@@ -2475,5 +2460,266 @@
          }
       ],
       "modified": "2024-10-25 14:50:02.645680"
+   },
+   {
+      "name": "Bunga Alodia Isfara",
+      "work": "Bachelor of Psychology",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/bunga-alodia-isfara-79188b221/",
+      "experiences": [
+         {
+            "name": "Assistant Professor",
+            "location": "Universitas Muhammadiyah Bandung \u00b7 Contract",
+            "time": "Oct 2024 - Present \u00b7 3 mos"
+         },
+         {
+            "name": "Learning Facilitator",
+            "location": "Dinas Pendidikan Provinsi Jawa Barat \u00b7 Contract",
+            "time": "Feb 2024 - Present \u00b7 11 mos"
+         },
+         {
+            "name": "Freelance Tester Psychological Test",
+            "location": "PRIMASAGA STRATEGIC \u00b7 Freelance",
+            "time": "Jul 2024 - Present \u00b7 6 mos"
+         },
+         {
+            "name": "Public Relations Event Specialist",
+            "location": "Kameo Activation \u00b7 Freelance",
+            "time": "Aug 2022 - Present \u00b7 2 yrs 5 mos"
+         },
+         {
+            "name": "Ketua Umum",
+            "location": "Peace Volunteer for Peaceful Land Rumah Teduh Sahabat Iin \u00b7 Full-time",
+            "time": "Feb 2023 - Present \u00b7 1 yr 11 mos"
+         },
+         {
+            "name": "Assistant Trainer",
+            "location": "YES Training Village  \u00b7 Contract",
+            "time": "Dec 2023 - May 2024 \u00b7 6 mos"
+         },
+         {
+            "name": "Asisten Psikolog",
+            "location": "PT. Rumah Konsul Indonesia \u00b7 Internship",
+            "time": "Nov 2023 - Dec 2023 \u00b7 2 mos"
+         },
+         {
+            "name": "Assistant Lecturer",
+            "location": "Universitas Muhammadiyah Bandung \u00b7 Seasonal",
+            "time": "Mar 2023 - Sep 2023 \u00b7 7 mos"
+         },
+         {
+            "name": "Research Staff Member",
+            "location": "Universitas Muhammadiyah Bandung \u00b7 Contract",
+            "time": "Apr 2022 - Sep 2023 \u00b7 1 yr 6 mos"
+         },
+         {
+            "name": "Psychology Instructor",
+            "location": "Cahaya Surya Assessment and Development Center",
+            "time": "Mar 2022 - May 2022 \u00b7 3 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:22:11.841606"
+   },
+   {
+      "name": "Ani Anisyah",
+      "work": "Software Developer & Researcher",
+      "location": "West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/anianisyah/",
+      "experiences": [
+         {
+            "name": "Junior Project Manager",
+            "location": "PT ARM Solusi",
+            "time": "Jun 2018 - Present \u00b7 6 yrs 7 mos"
+         },
+         {
+            "name": "Frontend Developer",
+            "location": "Encirclo \u00b7 Full-time",
+            "time": "Sep 2016 - Feb 2018 \u00b7 1 yr 6 mos"
+         },
+         {
+            "name": "Teacher Intern",
+            "location": "SMK Negeri 1 Cimahi",
+            "time": "Jul 2015 - Dec 2015 \u00b7 6 mos"
+         },
+         {
+            "name": "Asisten Laboratorium dan Asisten Matakuliah Basis Data",
+            "location": "Universitas Pendidikan Indonesia",
+            "time": "Aug 2014 - Aug 2015 \u00b7 1 yr 1 mo"
+         },
+         {
+            "name": "Freelance Web Developer",
+            "location": "KONG Creative Studio",
+            "time": "Mar 2015 - May 2015 \u00b7 3 mos"
+         },
+         {
+            "name": "Freelance Web Developer",
+            "location": "Comlabs-USDI ITB",
+            "time": "Jan 2015 - Mar 2015 \u00b7 3 mos"
+         },
+         {
+            "name": "Web Designer",
+            "location": "CV. Bizmedia Computer",
+            "time": "Jan 2012 - Dec 2012 \u00b7 1 yr"
+         },
+         {
+            "name": "Student Intern",
+            "location": "Badan Tenaga Nuklir Nasional (BATAN)",
+            "time": "Sep 2011 - Nov 2011 \u00b7 3 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:42:02.814625"
+   },
+   {
+      "name": "Catrine Salsabiila",
+      "work": "Undergraduate Student of History Education at Indonesia University of education",
+      "location": "West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/catrine-salsabiila-19810a226/",
+      "experiences": [
+         {
+            "name": "Talent",
+            "location": "Cimory Group \u00b7 Freelance",
+            "time": "Oct 2024 - Dec 2024 \u00b7 3 mos"
+         },
+         {
+            "name": "Secretary",
+            "location": "Sekretariat DPRD Provinsi Jawa Barat \u00b7 Seasonal",
+            "time": "Sep 2024 - Oct 2024 \u00b7 2 mos"
+         },
+         {
+            "name": "Administration Assistant",
+            "location": "cerita grill \u00b7 Full-time",
+            "time": "Apr 2024 - Jun 2024 \u00b7 3 mos"
+         },
+         {
+            "name": "Reporter",
+            "location": "KapanLagi Youniverse \u00b7 Apprenticeship",
+            "time": "Aug 2023 - Dec 2023 \u00b7 5 mos"
+         },
+         {
+            "name": "Kampus Mengajar",
+            "location": "Kementerian Pendidikan dan Kebudayaan (Ministry of Education and Culture Republic of Indonesia) \u00b7 Internship",
+            "time": "Feb 2023 - Jun 2023 \u00b7 5 mos"
+         },
+         {
+            "name": "Wardrobe Stylist",
+            "location": "UKM Film Satu Layar UPI \u00b7 Seasonal",
+            "time": "May 2022 - Jun 2023 \u00b7 1 yr 2 mos"
+         },
+         {
+            "name": "public relations",
+            "location": "himpunan pendidikan sejarah \u00b7 Contract",
+            "time": "Jun 2021 - Jun 2023 \u00b7 2 yrs 1 mo"
+         },
+         {
+            "name": "Stage Crew Member",
+            "location": "Dinas Kebudayaan & Pariwisata Kota Bandung \u00b7 Seasonal",
+            "time": "May 2023 - May 2023 \u00b7 1 mo"
+         }
+      ],
+      "modified": "2024-12-19 15:42:34.378328"
+   },
+   {
+      "name": "Zenna Dwi Utama",
+      "work": ".Net Developer",
+      "location": "Greater Bandung",
+      "link": "https://www.linkedin.com/in/zennadwi/",
+      "experiences": [
+         {
+            "name": ".NET Developer",
+            "location": "PT Axelsen Marvel Studio \u00b7 Contract",
+            "time": "Jan 2024 - Present \u00b7 1 yr"
+         },
+         {
+            "name": "Back End Developer",
+            "location": "Xtremax \u00b7 Full-time",
+            "time": "Jan 2020 - Oct 2023 \u00b7 3 yrs 10 mos"
+         },
+         {
+            "name": "Web Developer",
+            "location": "KEMENTERIAN NEGARA BADAN USAHA MILIK NEGARA \u00b7 Full-time",
+            "time": "Feb 2018 - Dec 2019 \u00b7 1 yr 11 mos"
+         },
+         {
+            "name": "Backend Programer",
+            "location": "Encirclo \u00b7 Full-time",
+            "time": "Sep 2017 - Feb 2018 \u00b7 6 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:42:43.579997"
+   },
+   {
+      "name": "Muhamad Ilham Nuari",
+      "work": "Software Engineering Graduate at Universitas Pendidikan Indonesia",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/ilhamnuari/",
+      "experiences": [],
+      "modified": "2024-12-19 15:42:54.937095"
+   },
+   {
+      "name": "Fenny Feronika Maharani",
+      "work": "IT Specialist at PT Bank Central Asia Tbk | Backend Developer",
+      "location": "West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/fennyyfm/",
+      "experiences": [
+         {
+            "name": "IT Specialist",
+            "location": "PT Bank Central Asia Tbk (BCA) \u00b7 Full-time",
+            "time": "Sep 2023 - Present \u00b7 1 yr 4 mos"
+         },
+         {
+            "name": "IT Specialist",
+            "location": "PT Bank Central Asia Tbk (BCA) \u00b7 Contract",
+            "time": "Sep 2022 - Sep 2023 \u00b7 1 yr 1 mo"
+         },
+         {
+            "name": "Back End Developer",
+            "location": "Layanan Cerdas Indonesia \u00b7 Freelance",
+            "time": "Nov 2021 - Aug 2022 \u00b7 10 mos"
+         },
+         {
+            "name": "Back End Developer",
+            "location": "GeekCo - PT Pengembang Inovasi Teknologi \u00b7 Full-time",
+            "time": "Apr 2021 - Nov 2021 \u00b7 8 mos"
+         },
+         {
+            "name": "Researcher Internship",
+            "location": "Pusat Inovasi Kota & Komunitas Cerdas \u00b7 Internship",
+            "time": "Jul 2020 - Feb 2021 \u00b7 8 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:43:11.493653"
+   },
+   {
+      "name": "Wirdatul Hayaty",
+      "work": "Fresh Graduate Student at Universitas Pendidikan Indonesia",
+      "location": "Bandung, West Java, Indonesia",
+      "link": "https://www.linkedin.com/in/wirdatul-hayaty-654b75253/",
+      "experiences": [
+         {
+            "name": "Operations System Analyst",
+            "location": "PT PLN (Persero) \u00b7 Internship",
+            "time": "Jun 2022 - Sep 2022 \u00b7 4 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:43:37.868554"
+   },
+   {
+      "name": "Siti Aisyah Ikrimawati",
+      "work": "Early Childhood Education Students in Universitas Pendidikan Indonesia",
+      "location": "Jakarta, Indonesia",
+      "link": "https://www.linkedin.com/in/siti-aisyah-ikrimawati-a40223230/",
+      "experiences": [
+         {
+            "name": "Guru & Learning Designer PAUD",
+            "location": "Sekolah Murid Merdeka \u00b7 Internship",
+            "time": "Sep 2024 - Dec 2024 \u00b7 4 mos"
+         },
+         {
+            "name": "Publication and Documentation",
+            "location": "Kampus Mengajar \u00b7 Internship",
+            "time": "Feb 2024 - Jun 2024 \u00b7 5 mos"
+         }
+      ],
+      "modified": "2024-12-19 15:43:52.508113"
    }
 ]

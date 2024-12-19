@@ -8,7 +8,7 @@ from interactive_wordcloud import create_wordcloud
 from modal import profile_modal, confirmation_modal, loading_modal
 from the_list import create_list, profile_header, profile_details
 
-app = dash.Dash(title="CS UPI Alumni Dashboard", external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(title="UPI Alumni Professional Information", external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 navbar = create_navbar()
 
@@ -209,7 +209,7 @@ def update_confirmation(n, content):
     # jika tombol yes di-click
     if n > 0:
         isolated_variables = {}
-        with open("D:\\Dokumen\\dashboardPro\\test_1.py", "r") as scp:
+        with open("D:\\Dokumen\\dashboardPro\\data_scraping.py", "r") as scp:
             code_script = scp.read()
             exec(code_script, isolated_variables, isolated_variables)
         with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py", "r") as scp:

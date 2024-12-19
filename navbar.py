@@ -44,7 +44,7 @@ def create_navbar():
                     dbc.Row(
                         [
                             dbc.Col(html.Img(src=pil_image, height="30px")),
-                            dbc.Col(dbc.NavbarBrand("Alumni Dashboard", className="ms-2"))
+                            dbc.Col(dbc.NavbarBrand("Alumni Professional Information", className="ms-2"))
                         ],
                         align="center",
                         className="g-0"
