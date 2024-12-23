@@ -155,48 +155,7 @@ def confirmation_panel(n_open, n_yes, n_no, is_open):
         return False
 
     return is_open
-"""    
-@app.callback(
-    [
-        Output("loading-modal", "is_open"),
-        Output("check-confirmation", "children"),
-        Output("running-script", "data"),
-        Output("wordcloud", "children")
-    ],
-    [
-        Input("yes-update", "n_clicks"),
-        Input("running-script", "data")
-    ],
-    [
-        State("loading-modal", "is_open"),
-        State("wordcloud", "children")
-    ]
-)
-def update_confirmation(n, running_script, is_open, content):
-    # menggunakan dash.callback_context untuk menentukan komponen yang akan men-trigger callback
-    ctx = dash.callback_context
 
-    if not ctx.triggered:
-        return is_open, "", running_script, content
-
-    # mencari id dari komponen yang melakukan trigger pada callback
-    trigger_id = ctx.triggered[0]["prop_id"].split(".")[0]
-
-    if trigger_id == "yes-update" and n > 0 and running_script == False:
-        return True, "", True, content
-
-    elif trigger_id == "running-script" and running_script == True and is_open == True:
-        isolated_variables = {}
-        with open("D:\\Dokumen\\dashboardPro\\test_1.py", "r") as scp:
-            code_script = scp.read()
-            exec(code_script, isolated_variables, isolated_variables)
-        with open("D:\\Dokumen\\dashboardPro\\data_classification_rev.py", "r") as scp:
-            code_script = scp.read()
-            exec(code_script, isolated_variables, isolated_variables)
-        return False, "Action!", False, create_wordcloud()
-
-    return is_open, "", running_script, content
-"""
 # Fungsi untuk check konfirmasi update data
 # callback
 @app.callback(
@@ -293,62 +252,6 @@ def modal_toggle(n_list, n_close, content, is_open):
             return True, header, body, [0]*len(n_list)
 
     return is_open, "", "", n_list
-
-# modal
-"""
-@app.callback(
-    Output("modal", "is_open"),
-    Output("modal-header", "children"),
-    Output("modal-body", "children"),
-    [
-        Input("cloud", "click"),
-        Input("modal-close", "n_clicks"),
-    ],
-    [State("modal", "is_open")]
-)
-
-def show_modal(item, n, is_open):
-    print(f"item : {item}, n : {n}, is_open : {is_open}")
-    if n and is_open:
-        return False, None, None
-    if item:
-        list_data = create_list(item[3])
-        list_group = dbc.ListGroup(
-            [
-                *list_data
-            ],
-            id="list-group"
-        )
-        return True, "{}".format(item[0]), list_group
-    return is_open, None, None
-
-"""
-
-
-"""
-@app.callback(
-    Output("modal-2", "is_open"),
-    [
-        Input({"type": "list", "index": MATCH}, "n_clicks"),
-        Input("modal-close-2", "n_clicks"),
-    ],
-    [
-        State("modal-2", "is_open"),
-        State("modal", "is_open"),
-    ],
-)
-
-def show_second_modal(n1, n2, is_open_2, is_open_1):
-    print(f"n1 : {n1}, n2 : {n2}, is_open_1 : {is_open_1}, is_open_2 : {is_open_2}")
-    n1 = n1 or 0
-    n2 = n2 or 0
-    if is_open_1:
-        if n1 > 0:
-            return not is_open_2
-        elif n2 > 0:
-            return False
-    return is_open_2
-"""
 
 if __name__ == "__main__":
     app.run_server()
