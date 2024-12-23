@@ -11,6 +11,10 @@ from datetime import datetime
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Mendapatkan email akun LinkedIn
+with open("D:\\Dokumen\\email.txt") as a:
+    email = a.readline()
+
 # Mendapatkan password akun LinkedIn
 with open("D:\\Dokumen\\account.txt") as f:
     acc = f.readline()
@@ -36,7 +40,7 @@ sleep(randint(4, 5))
 # cari field untuk mengisi username (email)
 username = driver.find_element(By.ID, "username")
 # mengisi alamat email
-username.send_keys("dheyahamida@upi.edu")  
+username.send_keys(email)  
 
 sleep(1) 
 # Mengisi password
